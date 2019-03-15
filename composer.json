@@ -1,0 +1,26 @@
+{
+    "name": "getresponse/sdk-php",
+    "description": "SDK for all public GetResponse products",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GetResponse DevTeam"
+        }
+    ],
+    "support": {
+        "email": "getresponse-devzone@cs.getresponse.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "Getresponse\\Sdk\\": "src/",
+            "Getresponse\\Sdk\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "getresponse/sdk-php-client": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^5.0"
+    }
+}
