@@ -1,3 +1,7 @@
+## 1.1.1 - 2019-04-10
+
+* Fix example composer.json and version
+
 ## 1.1.0 - 2019-04-10
 
 * Added A/B tests
