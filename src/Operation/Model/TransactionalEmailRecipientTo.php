@@ -6,13 +6,13 @@ use Getresponse\Sdk\Client\Operation\BaseModel;
 class TransactionalEmailRecipientTo extends BaseModel
 {
     /** @var string */
+    private $validSince = self::FIELD_NOT_SET;
+
+    /** @var string */
     private $email;
 
     /** @var string */
     private $name = self::FIELD_NOT_SET;
-
-    /** @var string */
-    private $validSince = self::FIELD_NOT_SET;
 
 
     /**
@@ -21,15 +21,6 @@ class TransactionalEmailRecipientTo extends BaseModel
     public function __construct($email)
     {
         $this->email = $email;
-    }
-
-
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
     }
 
 
@@ -43,14 +34,23 @@ class TransactionalEmailRecipientTo extends BaseModel
 
 
     /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+
+    /**
      * @return array
      */
     public function jsonSerialize()
     {
         $data = [
+            'validSince' => $this->validSince,
             'email' => $this->email,
             'name' => $this->name,
-            'validSince' => $this->validSince,
         ];
 
         return $this->filterUnsetFields($data);
