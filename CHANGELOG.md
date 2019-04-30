@@ -1,4 +1,4 @@
-## 1.2.1 - 2019-04-30
+## 1.2.0 - 2019-04-30
 
 * Add origin 'webinar' to contact search
 
