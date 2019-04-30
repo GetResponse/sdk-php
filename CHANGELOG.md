@@ -1,3 +1,7 @@
+## 1.2.1 - 2019-04-30
+
+* Add origin 'webinar' to contact search
+
 ## 1.1.1 - 2019-04-10
 
 * Fix example composer.json and version

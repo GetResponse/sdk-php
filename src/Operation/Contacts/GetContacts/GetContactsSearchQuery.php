@@ -176,6 +176,16 @@ class GetContactsSearchQuery extends SearchQuery
 
 
     /**
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereOriginIsWebinar()
+    {
+        return $this->set('origin', 'webinar');
+    }
+
+
+    /**
      * @param DateRangeSearch $createdOn
      * @return $this
      * @throws \InvalidArgumentException
