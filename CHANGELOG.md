@@ -1,3 +1,7 @@
+## 1.2.1 - 2019-06-07
+
+* Improve documentation
+
 ## 1.2.0 - 2019-04-30
 
 * Add origin 'webinar' to contact search
@@ -14,4 +18,4 @@
 
 ## 1.0.0 - 2019-03-15
 
-Initial release 
+Initial release

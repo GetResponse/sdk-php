@@ -37,7 +37,10 @@ git clone https://github.com/GetResponse/sdk-php.git
 
 Copy composer.json from the `examples` directory into your project directory and run the `composer install` command in this directory.
 
-You can also integrate with an existing one by running `composer require getresponse/sdk-php`.
+You can also integrate with an existing one by running
+```
+composer require getresponse/sdk-php
+```
 
 See [https://getcomposer.org](https://getcomposer.org) for in-depth tutorials.
 
@@ -50,7 +53,6 @@ To create a GetResponse client object, use:
 use Getresponse\Sdk\GetresponseClientFactory;
 
 $client = GetresponseClientFactory::createWithApiKey('1234567e590706d0a3e7e5a30053e456');
-$campaignsOperation = new GetCampaigns();
 
 ```
 
@@ -65,7 +67,7 @@ For the Enterprise environment please use one of the Enterprise factories, e.g.:
 ```php
 use Getresponse\Sdk\GetresponseClientFactory;
 
-$client = createEnterprisePLWithApiKey('1234567e590706d0a3e7e5a30053e456', 'myexampledomain.com');
+$client = GetresponseClientFactory::createEnterprisePLWithApiKey('1234567e590706d0a3e7e5a30053e456', 'myexampledomain.com');
 
 ```
 or:
@@ -73,7 +75,7 @@ or:
 ```php
 use Getresponse\Sdk\GetresponseClientFactory;
 
-$client = createEnterpriseUSWithApiKey('1234567e590706d0a3e7e5a30053e456', 'myexampledomain.com');
+$client = GetresponseClientFactory::createEnterpriseUSWithApiKey('1234567e590706d0a3e7e5a30053e456', 'myexampledomain.com');
 
 ```
 
