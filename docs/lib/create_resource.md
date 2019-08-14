@@ -22,6 +22,12 @@ if ($response->isSuccess()) {
 }
 ```
 
+Output:	
+
+ ```plain	
+OK	
+```
+
 ___
 
 [Back](../../README.md)
