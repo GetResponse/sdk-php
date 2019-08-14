@@ -3,18 +3,17 @@
 Example code
 
 ```php
-
-use Getresponse\Sdk\Operation\Model\NewContact;
-use Getresponse\Sdk\Operation\Model\ResourceCampaign;
-use Getresponse\Sdk\Operation\Contacts\CreateContact\CreateContact;
 use Getresponse\Sdk\GetresponseClientFactory;
+use Getresponse\Sdk\Operation\Contacts\CreateContact\CreateContact;
+use Getresponse\Sdk\Operation\Model\CampaignReference;
+use Getresponse\Sdk\Operation\Model\NewContact;
 
 $createContact = new NewContact(
-    new ResourceCampaign('cdd'),
+    new CampaignReference('cdd'),
     'adam.foo@email.com'
 );
 
-$createContactOperation = new CreateContact();
+$createContactOperation = new CreateContact($createContact);
 $client = GetresponseClientFactory::createWithApiKey('my_api_key');
 $response = $client->call($createContactOperation);
 
@@ -22,10 +21,11 @@ if ($response->isSuccess()) {
     print 'OK';
 }
 ```
-Output:
 
-```plain
-OK
+Output:	
+
+ ```plain	
+OK	
 ```
 
 ___
