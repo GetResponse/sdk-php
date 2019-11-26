@@ -16,7 +16,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $client = GetresponseClientFactory::createWithApiKey(getenv('API_KEY'));
 
 /**
- * let search for company. f.e. the first one we could find
+ * let search for campaign. f.e. the first one we could find
  */
 $campaignsOperation = new GetCampaigns();
 $response = $client->call($campaignsOperation);
