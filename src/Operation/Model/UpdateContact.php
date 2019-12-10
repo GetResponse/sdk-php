@@ -14,7 +14,7 @@ class UpdateContact extends BaseModel
     /** @var string */
     private $email = self::FIELD_NOT_SET;
 
-    /** @var float */
+    /** @var string */
     private $dayOfCycle = self::FIELD_NOT_SET;
 
     /** @var string */
@@ -61,7 +61,7 @@ class UpdateContact extends BaseModel
 
 
     /**
-     * @param float $dayOfCycle
+     * @param string $dayOfCycle
      */
     public function setDayOfCycle($dayOfCycle)
     {

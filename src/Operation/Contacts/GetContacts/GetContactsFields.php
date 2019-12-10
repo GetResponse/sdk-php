@@ -23,6 +23,7 @@ class GetContactsFields extends ValueList
             'dayOfCycle',
             'note',
             'scoring',
+            'engagementScore',
             'ipAddress',
             'href',
         ];
