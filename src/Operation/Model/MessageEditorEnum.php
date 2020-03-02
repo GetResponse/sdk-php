@@ -6,12 +6,13 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 class MessageEditorEnum extends BaseEnum
 {
     const CUSTOM = 'custom';
-    const PLAIN = 'plain';
+    const TEXT = 'text';
     const GETRESPONSE = 'getresponse';
+    const LEGACY = 'legacy';
     const HTML2 = 'html2';
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isMultiple()
     {
@@ -26,8 +27,9 @@ class MessageEditorEnum extends BaseEnum
     {
         return [
             self::CUSTOM,
-            self::PLAIN,
+            self::TEXT,
             self::GETRESPONSE,
+            self::LEGACY,
             self::HTML2,
         ];
     }

@@ -13,7 +13,7 @@ class CustomFieldFormatEnum extends BaseEnum
     const MULTI_SELECT = 'multi_select';
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isMultiple()
     {

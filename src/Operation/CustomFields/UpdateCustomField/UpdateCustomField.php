@@ -13,7 +13,7 @@ class UpdateCustomField extends CommandOperation
 
     const METHOD_URL = '/v3/custom-fields/{customFieldId}';
 
-    /** @var UpdateCustomField */
+    /** @var ModelUpdateCustomField */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateCustomField extends CommandOperation
 
 
     /**
-     * @param UpdateCustomField $data
+     * @param ModelUpdateCustomField $data
      * @param string $customFieldId
      */
     public function __construct(ModelUpdateCustomField $data, $customFieldId)

@@ -14,17 +14,14 @@ class UpdateContact extends BaseModel
     /** @var string */
     private $email = self::FIELD_NOT_SET;
 
-    /** @var float */
-    private $dayOfCycle = self::FIELD_NOT_SET;
-
     /** @var string */
-    private $note = self::FIELD_NOT_SET;
+    private $dayOfCycle = self::FIELD_NOT_SET;
 
     /** @var float */
     private $scoring = self::FIELD_NOT_SET;
 
     /** @var string */
-    private $ipAddress = self::FIELD_NOT_SET;
+    private $note = self::FIELD_NOT_SET;
 
     /** @var NewContactTag[] */
     private $tags = self::FIELD_NOT_SET;
@@ -61,20 +58,11 @@ class UpdateContact extends BaseModel
 
 
     /**
-     * @param float $dayOfCycle
+     * @param string $dayOfCycle
      */
     public function setDayOfCycle($dayOfCycle)
     {
         $this->dayOfCycle = $dayOfCycle;
-    }
-
-
-    /**
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-        $this->note = $note;
     }
 
 
@@ -88,11 +76,11 @@ class UpdateContact extends BaseModel
 
 
     /**
-     * @param string $ipAddress
+     * @param string $note
      */
-    public function setIpAddress($ipAddress)
+    public function setNote($note)
     {
-        $this->ipAddress = $ipAddress;
+        $this->note = $note;
     }
 
 
@@ -124,9 +112,8 @@ class UpdateContact extends BaseModel
             'campaign' => $this->campaign,
             'email' => $this->email,
             'dayOfCycle' => $this->dayOfCycle,
-            'note' => $this->note,
             'scoring' => $this->scoring,
-            'ipAddress' => $this->ipAddress,
+            'note' => $this->note,
             'tags' => $this->tags,
             'customFieldValues' => $this->customFieldValues,
         ];

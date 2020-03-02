@@ -12,6 +12,7 @@ class GetNewsletterFields extends ValueList
     {
         return [
             'clickTracks',
+            'flags',
             'newsletterId',
             'href',
             'name',
@@ -24,7 +25,6 @@ class GetNewsletterFields extends ValueList
             'campaign',
             'sendOn',
             'content',
-            'flags',
             'attachments',
             'sendSettings',
             'sendMetrics',

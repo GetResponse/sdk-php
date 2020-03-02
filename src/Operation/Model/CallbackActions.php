@@ -5,27 +5,27 @@ use Getresponse\Sdk\Client\Operation\BaseModel;
 
 class CallbackActions extends BaseModel
 {
-    /** @var boolean */
+    /** @var bool */
     private $open = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $click = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $goal = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $subscribe = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $unsubscribe = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $survey = self::FIELD_NOT_SET;
 
 
     /**
-     * @param boolean $open
+     * @param bool $open
      */
     public function setOpen($open)
     {
@@ -34,7 +34,7 @@ class CallbackActions extends BaseModel
 
 
     /**
-     * @param boolean $click
+     * @param bool $click
      */
     public function setClick($click)
     {
@@ -43,7 +43,7 @@ class CallbackActions extends BaseModel
 
 
     /**
-     * @param boolean $goal
+     * @param bool $goal
      */
     public function setGoal($goal)
     {
@@ -52,7 +52,7 @@ class CallbackActions extends BaseModel
 
 
     /**
-     * @param boolean $subscribe
+     * @param bool $subscribe
      */
     public function setSubscribe($subscribe)
     {
@@ -61,7 +61,7 @@ class CallbackActions extends BaseModel
 
 
     /**
-     * @param boolean $unsubscribe
+     * @param bool $unsubscribe
      */
     public function setUnsubscribe($unsubscribe)
     {
@@ -70,7 +70,7 @@ class CallbackActions extends BaseModel
 
 
     /**
-     * @param boolean $survey
+     * @param bool $survey
      */
     public function setSurvey($survey)
     {

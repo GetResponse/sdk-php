@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Campaigns\Blacklists\GetBlacklists;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetBlacklistsSearchQuery extends SearchQuery

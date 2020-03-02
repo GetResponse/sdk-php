@@ -1,3 +1,15 @@
+## 2.0.0 - 2020-03-02
+
+* Add operations for:
+  * Click Tracks
+  * File Library
+  * Newsletter Activities
+  * Transactional Emails
+* Remove unused classes and methods
+* Code clean-up
+
+Read more in [Upgrade Guide](UPGRADING.md)
+
 ## 1.2.1 - 2019-06-07
 
 * Improve documentation

@@ -26,10 +26,10 @@ class NewProductVariant extends BaseModel
     /** @var float */
     private $previousPriceTax = self::FIELD_NOT_SET;
 
-    /** @var integer */
+    /** @var int */
     private $quantity = self::FIELD_NOT_SET;
 
-    /** @var integer */
+    /** @var int */
     private $position = self::FIELD_NOT_SET;
 
     /** @var string */
@@ -94,7 +94,7 @@ class NewProductVariant extends BaseModel
 
 
     /**
-     * @param integer $quantity
+     * @param int $quantity
      */
     public function setQuantity($quantity)
     {
@@ -103,7 +103,7 @@ class NewProductVariant extends BaseModel
 
 
     /**
-     * @param integer $position
+     * @param int $position
      */
     public function setPosition($position)
     {

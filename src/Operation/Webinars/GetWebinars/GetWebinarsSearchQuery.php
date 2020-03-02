@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Webinars\GetWebinars;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetWebinarsSearchQuery extends SearchQuery
@@ -15,6 +14,7 @@ class GetWebinarsSearchQuery extends SearchQuery
             'name',
             'campaignId',
             'status',
+            'type',
         ];
     }
 
@@ -65,8 +65,48 @@ class GetWebinarsSearchQuery extends SearchQuery
      * @return $this
      * @throws \InvalidArgumentException
      */
-    public function whereStatusIsDeleted()
+    public function whereStatusIsPublished()
     {
-        return $this->set('status', 'deleted');
+        return $this->set('status', 'published');
+    }
+
+
+    /**
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereStatusIsUnpublished()
+    {
+        return $this->set('status', 'unpublished');
+    }
+
+
+    /**
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereTypeIsAll()
+    {
+        return $this->set('type', 'all');
+    }
+
+
+    /**
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereTypeIsLive()
+    {
+        return $this->set('type', 'live');
+    }
+
+
+    /**
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereTypeIsOnDemand()
+    {
+        return $this->set('type', 'on_demand');
     }
 }

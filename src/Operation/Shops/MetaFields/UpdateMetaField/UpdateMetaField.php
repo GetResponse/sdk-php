@@ -13,7 +13,7 @@ class UpdateMetaField extends CommandOperation
 
     const METHOD_URL = '/v3/shops/{shopId}/meta-fields/{metaFieldId}';
 
-    /** @var UpdateMetaField */
+    /** @var ModelUpdateMetaField */
     protected $data;
 
     /** @var string */
@@ -24,7 +24,7 @@ class UpdateMetaField extends CommandOperation
 
 
     /**
-     * @param UpdateMetaField $data
+     * @param ModelUpdateMetaField $data
      * @param string $shopId
      * @param string $metaFieldId
      */

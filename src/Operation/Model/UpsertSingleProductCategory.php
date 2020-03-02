@@ -8,7 +8,7 @@ class UpsertSingleProductCategory extends BaseModel
     /** @var string */
     private $categoryId;
 
-    /** @var boolean */
+    /** @var bool */
     private $isDefault = self::FIELD_NOT_SET;
 
 
@@ -22,7 +22,7 @@ class UpsertSingleProductCategory extends BaseModel
 
 
     /**
-     * @param boolean $isDefault
+     * @param bool $isDefault
      */
     public function setIsDefault($isDefault)
     {

@@ -17,6 +17,7 @@ class GetWebinarFields extends ValueList
             'startsOn',
             'webinarUrl',
             'status',
+            'type',
             'campaigns',
             'newsletters',
             'statistics',

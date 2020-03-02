@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\TemplateCategories\GetTemplateCategories;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetTemplateCategoriesSearchQuery extends SearchQuery

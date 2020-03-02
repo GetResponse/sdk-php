@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\FromFields\GetFromFields;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetFromFieldsSearchQuery extends SearchQuery
@@ -14,6 +13,8 @@ class GetFromFieldsSearchQuery extends SearchQuery
         return [
             'email',
             'name',
+            'isDefault',
+            'isActive',
         ];
     }
 
@@ -37,5 +38,27 @@ class GetFromFieldsSearchQuery extends SearchQuery
     public function whereName($name)
     {
         return $this->set('name', $name);
+    }
+
+
+    /**
+     * @param string $isDefault
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereIsDefault($isDefault)
+    {
+        return $this->set('isDefault', $isDefault);
+    }
+
+
+    /**
+     * @param string $isActive
+     * @return $this
+     * @throws \InvalidArgumentException
+     */
+    public function whereIsActive($isActive)
+    {
+        return $this->set('isActive', $isActive);
     }
 }

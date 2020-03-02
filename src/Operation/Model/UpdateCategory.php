@@ -11,7 +11,7 @@ class UpdateCategory extends BaseModel
     /** @var string */
     private $parentId = self::FIELD_NOT_SET;
 
-    /** @var boolean */
+    /** @var bool */
     private $isDefault = self::FIELD_NOT_SET;
 
     /** @var string */
@@ -40,7 +40,7 @@ class UpdateCategory extends BaseModel
 
 
     /**
-     * @param boolean $isDefault
+     * @param bool $isDefault
      */
     public function setIsDefault($isDefault)
     {

@@ -8,7 +8,7 @@ class NewCartSelectedProductVariant extends BaseModel
     /** @var string */
     private $variantId;
 
-    /** @var integer */
+    /** @var int */
     private $quantity;
 
     /** @var float */
@@ -20,7 +20,7 @@ class NewCartSelectedProductVariant extends BaseModel
 
     /**
      * @param string $variantId
-     * @param integer $quantity
+     * @param int $quantity
      * @param float $price
      * @param float $priceTax
      */

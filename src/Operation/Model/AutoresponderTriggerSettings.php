@@ -8,7 +8,7 @@ class AutoresponderTriggerSettings extends BaseModel
     /** @var string */
     private $type;
 
-    /** @var integer */
+    /** @var int */
     private $dayOfCycle;
 
     /** @var array */
@@ -20,7 +20,7 @@ class AutoresponderTriggerSettings extends BaseModel
 
     /**
      * @param string $type
-     * @param integer $dayOfCycle
+     * @param int $dayOfCycle
      * @param array $selectedCampaigns
      */
     public function __construct($type, $dayOfCycle, array $selectedCampaigns)

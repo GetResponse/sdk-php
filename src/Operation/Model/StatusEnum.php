@@ -9,7 +9,7 @@ class StatusEnum extends BaseEnum
     const DISABLED = 'disabled';
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isMultiple()
     {

@@ -9,7 +9,7 @@ class StringBooleanEnum extends BaseEnum
     const FALSE = 'false';
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isMultiple()
     {

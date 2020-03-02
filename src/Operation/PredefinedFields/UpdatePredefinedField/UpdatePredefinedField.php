@@ -13,7 +13,7 @@ class UpdatePredefinedField extends CommandOperation
 
     const METHOD_URL = '/v3/predefined-fields/{predefinedFieldId}';
 
-    /** @var UpdatePredefinedField */
+    /** @var ModelUpdatePredefinedField */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdatePredefinedField extends CommandOperation
 
 
     /**
-     * @param UpdatePredefinedField $data
+     * @param ModelUpdatePredefinedField $data
      * @param string $predefinedFieldId
      */
     public function __construct(ModelUpdatePredefinedField $data, $predefinedFieldId)

@@ -11,6 +11,7 @@ class GetRssNewslettersFields extends ValueList
     public function getAllowedValues()
     {
         return [
+            'flags',
             'rssNewsletterId',
             'href',
             'rssFeedUrl',
@@ -21,7 +22,6 @@ class GetRssNewslettersFields extends ValueList
             'fromField',
             'replyTo',
             'content',
-            'flags',
             'sendSettings',
             'createdOn',
         ];

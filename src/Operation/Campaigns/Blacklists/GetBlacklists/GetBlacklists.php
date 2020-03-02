@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Campaigns\Blacklists\GetBlacklists;
 
-use Getresponse\Sdk\Client\Operation\Pagination;
 use Getresponse\Sdk\Client\Operation\QueryOperation;
 use Getresponse\Sdk\OperationVersionTrait;
 

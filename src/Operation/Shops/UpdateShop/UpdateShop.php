@@ -13,7 +13,7 @@ class UpdateShop extends CommandOperation
 
     const METHOD_URL = '/v3/shops/{shopId}';
 
-    /** @var UpdateShop */
+    /** @var ModelUpdateShop */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateShop extends CommandOperation
 
 
     /**
-     * @param UpdateShop $data
+     * @param ModelUpdateShop $data
      * @param string $shopId
      */
     public function __construct(ModelUpdateShop $data, $shopId)

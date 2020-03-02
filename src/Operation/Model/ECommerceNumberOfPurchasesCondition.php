@@ -1,8 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Model;
 
-use Getresponse\Sdk\Client\Operation\BaseModel;
-
 class ECommerceNumberOfPurchasesCondition extends ConditionType
 {
     /** @var string */
@@ -14,7 +12,7 @@ class ECommerceNumberOfPurchasesCondition extends ConditionType
     /** @var string */
     private $scope;
 
-    /** @var integer */
+    /** @var int */
     private $value;
 
 
@@ -22,7 +20,7 @@ class ECommerceNumberOfPurchasesCondition extends ConditionType
      * @param string $operatorType
      * @param string $operator
      * @param string $scope
-     * @param integer $value
+     * @param int $value
      */
     public function __construct($operatorType, $operator, $scope, $value)
     {

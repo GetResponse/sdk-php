@@ -8,10 +8,10 @@ abstract class AutoresponderSendSettings extends BaseModel
     /** @var string */
     private $type;
 
-    /** @var integer */
+    /** @var int */
     private $delayInHours = self::FIELD_NOT_SET;
 
-    /** @var integer */
+    /** @var int */
     private $sendAtHour = self::FIELD_NOT_SET;
 
     /** @var StringBooleanEnum */
@@ -34,7 +34,7 @@ abstract class AutoresponderSendSettings extends BaseModel
 
 
     /**
-     * @param integer $delayInHours
+     * @param int $delayInHours
      */
     public function setDelayInHours($delayInHours)
     {
@@ -43,7 +43,7 @@ abstract class AutoresponderSendSettings extends BaseModel
 
 
     /**
-     * @param integer $sendAtHour
+     * @param int $sendAtHour
      */
     public function setSendAtHour($sendAtHour)
     {

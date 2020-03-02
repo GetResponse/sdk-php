@@ -11,7 +11,7 @@ abstract class RssNewsletterSendSettings extends BaseModel
     /** @var string */
     private $filter;
 
-    /** @var integer */
+    /** @var int */
     private $maxArticles = self::FIELD_NOT_SET;
 
     /** @var array */
@@ -42,7 +42,7 @@ abstract class RssNewsletterSendSettings extends BaseModel
 
 
     /**
-     * @param integer $maxArticles
+     * @param int $maxArticles
      */
     public function setMaxArticles($maxArticles)
     {

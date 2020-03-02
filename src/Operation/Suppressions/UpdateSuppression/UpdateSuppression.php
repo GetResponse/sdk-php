@@ -13,7 +13,7 @@ class UpdateSuppression extends CommandOperation
 
     const METHOD_URL = '/v3/suppressions/{suppressionId}';
 
-    /** @var UpdateSuppression */
+    /** @var ModelUpdateSuppression */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateSuppression extends CommandOperation
 
 
     /**
-     * @param UpdateSuppression $data
+     * @param ModelUpdateSuppression $data
      * @param string $suppressionId
      */
     public function __construct(ModelUpdateSuppression $data, $suppressionId)

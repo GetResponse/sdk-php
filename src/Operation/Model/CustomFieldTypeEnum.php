@@ -22,7 +22,7 @@ class CustomFieldTypeEnum extends BaseEnum
     const URL = 'url';
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isMultiple()
     {

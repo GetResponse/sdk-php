@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Campaigns\Statistics\Summary\GetCampaignStatisticsSummary;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetCampaignStatisticsSummarySearchQuery extends SearchQuery

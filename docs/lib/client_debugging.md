@@ -5,6 +5,14 @@
 Once you set `Logger` using the `$client->setLogger` function, the calls will be logged. The `Logger` class is our wrapper - you should configure it with the PSR-3 logger class:
 
 ```php
+<?php
+
+use Getresponse\Sdk\Client\Debugger\Logger;
+use Getresponse\Sdk\Client\Debugger\DebugLogger;
+use Getresponse\Sdk\Client\Debugger\DataCollector;
+
+$dataCollector = new DataCollector();
+
 $client->setLogger(new Logger(new DebugLogger($dataCollector)));
 ```
 
@@ -36,14 +44,18 @@ To retrieve the debug information, you have to call `dump` or `dumpToFile` funct
 ## Example of debug initialization and dumping
 
 ```php
+<?php
 
-//initialize the client
-$client = new GetresponseClient(new CurlRequestHandler(), new GetResponse(), new ApiKey($apiKey));
+use Getresponse\Sdk\GetresponseClientFactory;
+
+// initialize the client
+$client = GetresponseClientFactory::createWithApiKey('my_api_key');
 $debugger = GetresponseClientFactory::createDebugger($client);
 
-//do some API calls here
+// do some API calls here
+// $client->call(...);
 
-$debugger->dump(); //to output
+$debugger->dump(); // to output
 $debugger->dumpToFile('/tmp/my_debug_file.txt');
 
 ```
@@ -56,17 +68,27 @@ Once you start the debugger, you overwrite the Logger configuration by `DebugLog
 ## Example debugging
 
 ```php
+<?php
 
 use Getresponse\Sdk\Operation\Contacts\GetContacts\GetContacts;
 use Getresponse\Sdk\GetresponseClientFactory;
+use Getresponse\Sdk\Operation\Contacts\GetContacts\GetContactsFields;
 
 $getContactsOperation = new GetContacts();
+$getContactsOperation->setFields(
+    new GetContactsFields(
+        'name',
+        'email',
+        'origin'
+    )
+);
+
 $client = GetresponseClientFactory::createWithApiKey('my_api_key');
 $debugger = GetresponseClientFactory::createDebugger($client);
 
 $response = $client->call($getContactsOperation);
 
-// display dump
+// echo the dump
 $debugger->dump();
 
 // save to file
@@ -77,9 +99,9 @@ Log content:
 
 ```
 --------- CALLS ---------
-    1. GET: /v3/contacts?sort[email]=desc&fields=email,name,origin
+    1. GET: /v3/contacts?fields=email,name,origin
         URL: https://api.getresponse.com
-        Authorization: api-key my_example_api_key
+        Authorization: api-key my_api_key
         Time: 11:56:29
         Protocol Version: 1.1
         Request size: 313
@@ -87,8 +109,8 @@ Log content:
         Connect time: 134 ms
         Request Headers:
             host: api.getresponse.com
-            user-agent: GetResponse-SDK/0.1.0 GetResponse-API/3.0 GetResponse-Client/0.1.0 CurlRequestHandler (cURL 7.54.0; PHP 7.1.14; Darwin; cli)
-            x-auth-token: api-key my_example_api_key
+            user-agent: GetResponse-SDK/2.0.0 GetResponse-API/3.0 GetResponse-Client/1.1.0 CurlRequestHandler (cURL 7.54.0; PHP 7.1.14; Darwin; cli)
+            x-auth-token: api-key my_api_key
         Request Body:
             [EMPTY]
         Total time: 580 ms
@@ -137,7 +159,7 @@ Log content:
 
 You can define your `Formatter` and `DebugDumper` classes to send debugs to systems like Elasticsearch or Sentry.
 
-* the custom `Formatter` should implement `Formatter interface` with the function: `format(Array $data)` - you can convert the collected data to any format you need. We supply `LineFormatter`, which gives you the plain text with intends in the results.
+* the custom `Formatter` should implement `Formatter interface` with the function: `format(array $data)` - you can convert the collected data to any format you need. We supply `LineFormatter`, which gives you the plain text with intends in the results.
 * the custom `Dumper` should implement the `DebugDumper interface` with the function `dump($debug)` - you can implement your own class which sends `$debug` to any output you wish. We supply `DisplayDebugDumper` and `FileDebugDumper`. 
 
 **Please note that the dumped content may contain sensitive data.**

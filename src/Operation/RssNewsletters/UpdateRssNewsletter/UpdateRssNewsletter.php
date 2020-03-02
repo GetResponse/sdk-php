@@ -13,7 +13,7 @@ class UpdateRssNewsletter extends CommandOperation
 
     const METHOD_URL = '/v3/rss-newsletters/{rssNewsletterId}';
 
-    /** @var UpdateRssNewsletter */
+    /** @var ModelUpdateRssNewsletter */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateRssNewsletter extends CommandOperation
 
 
     /**
-     * @param UpdateRssNewsletter $data
+     * @param ModelUpdateRssNewsletter $data
      * @param string $rssNewsletterId
      */
     public function __construct(ModelUpdateRssNewsletter $data, $rssNewsletterId)

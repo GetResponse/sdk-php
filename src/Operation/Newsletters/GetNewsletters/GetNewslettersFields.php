@@ -11,6 +11,7 @@ class GetNewslettersFields extends ValueList
     public function getAllowedValues()
     {
         return [
+            'flags',
             'newsletterId',
             'href',
             'name',
@@ -23,7 +24,6 @@ class GetNewslettersFields extends ValueList
             'campaign',
             'sendOn',
             'content',
-            'flags',
             'attachments',
             'sendSettings',
             'sendMetrics',
