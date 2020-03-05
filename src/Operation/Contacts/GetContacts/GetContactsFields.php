@@ -21,10 +21,11 @@ class GetContactsFields extends ValueList
             'campaign',
             'email',
             'dayOfCycle',
-            'note',
             'scoring',
-            'ipAddress',
+            'engagementScore',
             'href',
+            'note',
+            'ipAddress',
         ];
     }
 }

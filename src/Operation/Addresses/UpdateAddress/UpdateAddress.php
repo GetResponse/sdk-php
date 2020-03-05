@@ -13,7 +13,7 @@ class UpdateAddress extends CommandOperation
 
     const METHOD_URL = '/v3/addresses/{addressId}';
 
-    /** @var UpdateAddress */
+    /** @var ModelUpdateAddress */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateAddress extends CommandOperation
 
 
     /**
-     * @param UpdateAddress $data
+     * @param ModelUpdateAddress $data
      * @param string $addressId
      */
     public function __construct(ModelUpdateAddress $data, $addressId)

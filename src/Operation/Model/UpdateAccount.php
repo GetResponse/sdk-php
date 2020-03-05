@@ -18,22 +18,22 @@ class UpdateAccount extends BaseModel
     private $phone = self::FIELD_NOT_SET;
 
     /** @var string */
-    private $street = self::FIELD_NOT_SET;
+    private $state = self::FIELD_NOT_SET;
 
     /** @var string */
     private $city = self::FIELD_NOT_SET;
 
     /** @var string */
-    private $state = self::FIELD_NOT_SET;
+    private $street = self::FIELD_NOT_SET;
 
     /** @var string */
     private $zipCode = self::FIELD_NOT_SET;
 
     /** @var string */
-    private $timeFormat = self::FIELD_NOT_SET;
+    private $numberOfEmployees = self::FIELD_NOT_SET;
 
     /** @var string */
-    private $numberOfEmployees = self::FIELD_NOT_SET;
+    private $timeFormat = self::FIELD_NOT_SET;
 
 
     /**
@@ -73,11 +73,11 @@ class UpdateAccount extends BaseModel
 
 
     /**
-     * @param string $street
+     * @param string $state
      */
-    public function setStreet($street)
+    public function setState($state)
     {
-        $this->street = $street;
+        $this->state = $state;
     }
 
 
@@ -91,11 +91,11 @@ class UpdateAccount extends BaseModel
 
 
     /**
-     * @param string $state
+     * @param string $street
      */
-    public function setState($state)
+    public function setStreet($street)
     {
-        $this->state = $state;
+        $this->street = $street;
     }
 
 
@@ -109,20 +109,20 @@ class UpdateAccount extends BaseModel
 
 
     /**
-     * @param string $timeFormat
-     */
-    public function setTimeFormat($timeFormat)
-    {
-        $this->timeFormat = $timeFormat;
-    }
-
-
-    /**
      * @param string $numberOfEmployees
      */
     public function setNumberOfEmployees($numberOfEmployees)
     {
         $this->numberOfEmployees = $numberOfEmployees;
+    }
+
+
+    /**
+     * @param string $timeFormat
+     */
+    public function setTimeFormat($timeFormat)
+    {
+        $this->timeFormat = $timeFormat;
     }
 
 
@@ -136,12 +136,12 @@ class UpdateAccount extends BaseModel
             'lastName' => $this->lastName,
             'companyName' => $this->companyName,
             'phone' => $this->phone,
-            'street' => $this->street,
-            'city' => $this->city,
             'state' => $this->state,
+            'city' => $this->city,
+            'street' => $this->street,
             'zipCode' => $this->zipCode,
-            'timeFormat' => $this->timeFormat,
             'numberOfEmployees' => $this->numberOfEmployees,
+            'timeFormat' => $this->timeFormat,
         ];
 
         return $this->filterUnsetFields($data);

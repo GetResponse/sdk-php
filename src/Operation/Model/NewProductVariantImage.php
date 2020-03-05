@@ -8,13 +8,13 @@ class NewProductVariantImage extends BaseModel
     /** @var string */
     private $src;
 
-    /** @var integer */
+    /** @var int */
     private $position;
 
 
     /**
      * @param string $src
-     * @param integer $position
+     * @param int $position
      */
     public function __construct($src, $position)
     {

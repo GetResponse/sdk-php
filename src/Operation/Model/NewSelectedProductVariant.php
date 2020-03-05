@@ -14,7 +14,7 @@ class NewSelectedProductVariant extends BaseModel
     /** @var float */
     private $priceTax = self::FIELD_NOT_SET;
 
-    /** @var integer */
+    /** @var int */
     private $quantity;
 
     /** @var NewTax[] */
@@ -24,7 +24,7 @@ class NewSelectedProductVariant extends BaseModel
     /**
      * @param string $variantId
      * @param float $price
-     * @param integer $quantity
+     * @param int $quantity
      */
     public function __construct($variantId, $price, $quantity)
     {

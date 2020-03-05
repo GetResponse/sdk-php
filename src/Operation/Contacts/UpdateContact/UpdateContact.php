@@ -13,7 +13,7 @@ class UpdateContact extends CommandOperation
 
     const METHOD_URL = '/v3/contacts/{contactId}';
 
-    /** @var UpdateContact */
+    /** @var ModelUpdateContact */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateContact extends CommandOperation
 
 
     /**
-     * @param UpdateContact $data
+     * @param ModelUpdateContact $data
      * @param string $contactId
      */
     public function __construct(ModelUpdateContact $data, $contactId)

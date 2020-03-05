@@ -5,6 +5,9 @@ use Getresponse\Sdk\Client\Operation\BaseModel;
 
 class NewNewsletter extends BaseModel
 {
+    /** @var MessageFlagsArray */
+    private $flags = self::FIELD_NOT_SET;
+
     /** @var string */
     private $name = self::FIELD_NOT_SET;
 
@@ -32,9 +35,6 @@ class NewNewsletter extends BaseModel
     /** @var MessageContent */
     private $content;
 
-    /** @var MessageFlags */
-    private $flags = self::FIELD_NOT_SET;
-
     /** @var NewsletterAttachment[] */
     private $attachments = self::FIELD_NOT_SET;
 
@@ -61,6 +61,15 @@ class NewNewsletter extends BaseModel
         $this->campaign = $campaign;
         $this->content = $content;
         $this->sendSettings = $sendSettings;
+    }
+
+
+    /**
+     * @param MessageFlagsArray $flags
+     */
+    public function setFlags(MessageFlagsArray $flags)
+    {
+        $this->flags = $flags;
     }
 
 
@@ -110,15 +119,6 @@ class NewNewsletter extends BaseModel
 
 
     /**
-     * @param MessageFlags $flags
-     */
-    public function setFlags(MessageFlags $flags)
-    {
-        $this->flags = $flags;
-    }
-
-
-    /**
      * @param NewsletterAttachment[] $attachments
      */
     public function setAttachments(array $attachments)
@@ -133,6 +133,7 @@ class NewNewsletter extends BaseModel
     public function jsonSerialize()
     {
         $data = [
+            'flags' => $this->flags,
             'name' => $this->name,
             'type' => $this->type,
             'editor' => $this->editor,
@@ -142,7 +143,6 @@ class NewNewsletter extends BaseModel
             'campaign' => $this->campaign,
             'sendOn' => $this->sendOn,
             'content' => $this->content,
-            'flags' => $this->flags,
             'attachments' => $this->attachments,
             'sendSettings' => $this->sendSettings,
         ];

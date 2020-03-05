@@ -13,7 +13,7 @@ class UpdateTag extends CommandOperation
 
     const METHOD_URL = '/v3/tags/{tagId}';
 
-    /** @var UpdateTag */
+    /** @var ModelUpdateTag */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateTag extends CommandOperation
 
 
     /**
-     * @param UpdateTag $data
+     * @param ModelUpdateTag $data
      * @param string $tagId
      */
     public function __construct(ModelUpdateTag $data, $tagId)

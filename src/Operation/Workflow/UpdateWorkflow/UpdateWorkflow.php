@@ -13,7 +13,7 @@ class UpdateWorkflow extends CommandOperation
 
     const METHOD_URL = '/v3/workflow/{workflowId}';
 
-    /** @var UpdateWorkflow */
+    /** @var ModelUpdateWorkflow */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateWorkflow extends CommandOperation
 
 
     /**
-     * @param UpdateWorkflow $data
+     * @param ModelUpdateWorkflow $data
      * @param string $workflowId
      */
     public function __construct(ModelUpdateWorkflow $data, $workflowId)

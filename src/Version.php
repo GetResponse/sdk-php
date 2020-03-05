@@ -8,7 +8,7 @@ namespace Getresponse\Sdk;
  */
 class Version
 {
-    const VERSION = '1.2.1';
+    const VERSION = '2.0.0';
     
     const API_COMPATIBLE = '3.0';
 }

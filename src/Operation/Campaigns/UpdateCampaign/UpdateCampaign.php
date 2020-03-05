@@ -13,7 +13,7 @@ class UpdateCampaign extends CommandOperation
 
     const METHOD_URL = '/v3/campaigns/{campaignId}';
 
-    /** @var UpdateCampaign */
+    /** @var ModelUpdateCampaign */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateCampaign extends CommandOperation
 
 
     /**
-     * @param UpdateCampaign $data
+     * @param ModelUpdateCampaign $data
      * @param string $campaignId
      */
     public function __construct(ModelUpdateCampaign $data, $campaignId)

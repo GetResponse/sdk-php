@@ -13,7 +13,7 @@ class UpdateAutoresponder extends CommandOperation
 
     const METHOD_URL = '/v3/autoresponders/{autoresponderId}';
 
-    /** @var UpdateAutoresponder */
+    /** @var ModelUpdateAutoresponder */
     protected $data;
 
     /** @var string */
@@ -21,7 +21,7 @@ class UpdateAutoresponder extends CommandOperation
 
 
     /**
-     * @param UpdateAutoresponder $data
+     * @param ModelUpdateAutoresponder $data
      * @param string $autoresponderId
      */
     public function __construct(ModelUpdateAutoresponder $data, $autoresponderId)

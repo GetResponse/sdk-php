@@ -14,11 +14,8 @@ class NewContact extends BaseModel
     /** @var string */
     private $email;
 
-    /** @var float */
-    private $dayOfCycle = self::FIELD_NOT_SET;
-
     /** @var string */
-    private $note = self::FIELD_NOT_SET;
+    private $dayOfCycle = self::FIELD_NOT_SET;
 
     /** @var float */
     private $scoring = self::FIELD_NOT_SET;
@@ -54,20 +51,11 @@ class NewContact extends BaseModel
 
 
     /**
-     * @param float $dayOfCycle
+     * @param string $dayOfCycle
      */
     public function setDayOfCycle($dayOfCycle)
     {
         $this->dayOfCycle = $dayOfCycle;
-    }
-
-
-    /**
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-        $this->note = $note;
     }
 
 
@@ -117,7 +105,6 @@ class NewContact extends BaseModel
             'campaign' => $this->campaign,
             'email' => $this->email,
             'dayOfCycle' => $this->dayOfCycle,
-            'note' => $this->note,
             'scoring' => $this->scoring,
             'ipAddress' => $this->ipAddress,
             'tags' => $this->tags,

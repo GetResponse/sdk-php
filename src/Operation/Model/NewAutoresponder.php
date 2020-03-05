@@ -29,7 +29,7 @@ class NewAutoresponder extends BaseModel
     /** @var MessageContent */
     private $content;
 
-    /** @var MessageFlags */
+    /** @var MessageFlagsArray */
     private $flags = self::FIELD_NOT_SET;
 
     /** @var AutoresponderSendSettings */
@@ -107,9 +107,9 @@ class NewAutoresponder extends BaseModel
 
 
     /**
-     * @param MessageFlags $flags
+     * @param MessageFlagsArray $flags
      */
-    public function setFlags(MessageFlags $flags)
+    public function setFlags(MessageFlagsArray $flags)
     {
         $this->flags = $flags;
     }

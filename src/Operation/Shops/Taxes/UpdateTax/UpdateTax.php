@@ -13,7 +13,7 @@ class UpdateTax extends CommandOperation
 
     const METHOD_URL = '/v3/shops/{shopId}/taxes/{taxId}';
 
-    /** @var UpdateTax */
+    /** @var ModelUpdateTax */
     protected $data;
 
     /** @var string */
@@ -24,7 +24,7 @@ class UpdateTax extends CommandOperation
 
 
     /**
-     * @param UpdateTax $data
+     * @param ModelUpdateTax $data
      * @param string $shopId
      * @param string $taxId
      */

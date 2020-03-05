@@ -13,12 +13,12 @@ class SendNewsletterDraft extends CommandOperation
 
     const METHOD_URL = '/v3/newsletters/send-draft';
 
-    /** @var SendNewsletterDraft */
+    /** @var ModelSendNewsletterDraft */
     protected $data;
 
 
     /**
-     * @param SendNewsletterDraft $data
+     * @param ModelSendNewsletterDraft $data
      */
     public function __construct(ModelSendNewsletterDraft $data)
     {

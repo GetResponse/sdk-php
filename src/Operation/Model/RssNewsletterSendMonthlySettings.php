@@ -1,21 +1,19 @@
 <?php
 namespace Getresponse\Sdk\Operation\Model;
 
-use Getresponse\Sdk\Client\Operation\BaseModel;
-
 class RssNewsletterSendMonthlySettings extends RssNewsletterSendSettings
 {
-    /** @var integer */
+    /** @var int */
     private $sendAtHour;
 
-    /** @var integer */
+    /** @var int */
     private $sendAtMonthDay;
 
 
     /**
      * @param string $filter
-     * @param integer $sendAtHour
-     * @param integer $sendAtMonthDay
+     * @param int $sendAtHour
+     * @param int $sendAtMonthDay
      */
     public function __construct($filter, $sendAtHour, $sendAtMonthDay)
     {

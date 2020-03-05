@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\PredefinedFields\GetPredefinedFields;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetPredefinedFieldsSearchQuery extends SearchQuery

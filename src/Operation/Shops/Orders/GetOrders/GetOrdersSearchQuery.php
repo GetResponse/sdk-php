@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Shops\Orders\GetOrders;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetOrdersSearchQuery extends SearchQuery

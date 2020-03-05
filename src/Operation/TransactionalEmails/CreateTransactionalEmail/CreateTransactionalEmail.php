@@ -13,12 +13,12 @@ class CreateTransactionalEmail extends CommandOperation
 
     const METHOD_URL = '/v3/transactional-emails';
 
-    /** @var CreateTransactionalEmail */
+    /** @var ModelCreateTransactionalEmail */
     protected $data;
 
 
     /**
-     * @param CreateTransactionalEmail $data
+     * @param ModelCreateTransactionalEmail $data
      */
     public function __construct(ModelCreateTransactionalEmail $data)
     {

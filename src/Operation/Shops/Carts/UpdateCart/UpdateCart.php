@@ -13,7 +13,7 @@ class UpdateCart extends CommandOperation
 
     const METHOD_URL = '/v3/shops/{shopId}/carts/{cartId}';
 
-    /** @var UpdateCart */
+    /** @var ModelUpdateCart */
     protected $data;
 
     /** @var string */
@@ -24,7 +24,7 @@ class UpdateCart extends CommandOperation
 
 
     /**
-     * @param UpdateCart $data
+     * @param ModelUpdateCart $data
      * @param string $shopId
      * @param string $cartId
      */

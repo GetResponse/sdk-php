@@ -13,7 +13,7 @@ class UpdateCategory extends CommandOperation
 
     const METHOD_URL = '/v3/shops/{shopId}/categories/{categoryId}';
 
-    /** @var UpdateCategory */
+    /** @var ModelUpdateCategory */
     protected $data;
 
     /** @var string */
@@ -24,7 +24,7 @@ class UpdateCategory extends CommandOperation
 
 
     /**
-     * @param UpdateCategory $data
+     * @param ModelUpdateCategory $data
      * @param string $shopId
      * @param string $categoryId
      */

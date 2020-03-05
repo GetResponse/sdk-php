@@ -1,14 +1,15 @@
 # Updating resources
 
-Example code
+Example code for updating a name of a contact:
 
 ```php
+<?php
 
 use Getresponse\Sdk\Operation\Model;
 use Getresponse\Sdk\Operation\Contacts\UpdateContact\UpdateContact;
 use Getresponse\Sdk\GetresponseClientFactory;
 
-$updateContact = new Models\UpdateContact();
+$updateContact = new Model\UpdateContact();
 $updateContact->setName('New name');
 
 $updateContactOperation = new UpdateContact($updateContact, 'aad');
@@ -17,6 +18,7 @@ $response = $client->call($updateContactOperation);
 
 print $response->getData();
 ```
+
 Output:
 
 ```json

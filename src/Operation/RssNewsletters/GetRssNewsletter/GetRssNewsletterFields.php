@@ -12,6 +12,7 @@ class GetRssNewsletterFields extends ValueList
     {
         return [
             'clickTracks',
+            'flags',
             'rssNewsletterId',
             'href',
             'rssFeedUrl',
@@ -22,7 +23,6 @@ class GetRssNewsletterFields extends ValueList
             'fromField',
             'replyTo',
             'content',
-            'flags',
             'sendSettings',
             'createdOn',
         ];

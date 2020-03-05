@@ -43,7 +43,7 @@ abstract class GetResponseEnterprise implements Environment
      */
     private function validateDomain($domain)
     {
-        if (!preg_match('/^(?!www\\.)(?:(?:[a-zA-Z0-9]|(?<=[a-zA-Z0-9])\\-+(?=[a-zA-Z0-9])){1,63}\\.)+[a-zA-Z]{2,8}$/i', $domain)) {
+        if (!preg_match('/^(?!www\\.)(?:(?:[a-zA-Z0-9]|(?<=[a-zA-Z0-9])-+(?=[a-zA-Z0-9])){1,63}\\.)+[a-zA-Z]{2,8}$/i', $domain)) {
             throw new InvalidDomainException('The provided GetResponse Enterprise domain is invalid');
         }
     }

@@ -16,7 +16,7 @@ class GetSplittestFields extends ValueList
             'name',
             'campaign',
             'status',
-            'winningCriteroa',
+            'winningCriteria',
             'winningTarget',
             'stage',
             'type',

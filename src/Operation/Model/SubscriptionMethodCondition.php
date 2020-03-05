@@ -1,8 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Model;
 
-use Getresponse\Sdk\Client\Operation\BaseModel;
-
 class SubscriptionMethodCondition extends ConditionType
 {
     /** @var string */

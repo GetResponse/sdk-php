@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Shops\Products\Variants\DeleteVariant;
 
-use Getresponse\Sdk\Client\Exception\InvalidCommandDataException;
 use Getresponse\Sdk\Client\Operation\CommandOperation;
 use Getresponse\Sdk\Client\Operation\Operation;
 use Getresponse\Sdk\OperationVersionTrait;

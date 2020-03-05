@@ -1,8 +1,10 @@
 # Creating resources
 
-Example code
+Example code for adding a contact:
 
 ```php
+<?php
+
 use Getresponse\Sdk\GetresponseClientFactory;
 use Getresponse\Sdk\Operation\Contacts\CreateContact\CreateContact;
 use Getresponse\Sdk\Operation\Model\CampaignReference;
@@ -22,10 +24,10 @@ if ($response->isSuccess()) {
 }
 ```
 
-Output:	
+Output:
 
- ```plain	
-OK	
+```plain
+OK
 ```
 
 ___

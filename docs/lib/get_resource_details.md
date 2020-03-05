@@ -1,13 +1,16 @@
 # Getting single resource
 
-Example code
+Example code for getting a single contact details by ID
 
 ```php
+<?php
 
 use Getresponse\Sdk\Operation\Contacts\GetContact\GetContact;
 use Getresponse\Sdk\GetresponseClientFactory;
 
-$getContactDetailsOperation = new GetContact();
+$contactId = 'aad';
+
+$getContactDetailsOperation = new GetContact($contactId);
 $client = GetresponseClientFactory::createWithApiKey('my_api_key');
 $response = $client->call($getContactDetailsOperation);
 $data = $response->getData();
@@ -71,11 +74,16 @@ Output:
 You can choose a list of fields to get in the API response. Use the `setFields` method of operation:
 
 ```php
+<?php
 
-$campaignDetailsOperation->setFields(
-    'description',
-    'campaignId',
-    'name'
+use Getresponse\Sdk\Operation\Contacts\GetContact\GetContactFields;
+
+$getContactDetailsOperation->setFields(
+    new GetContactFields(
+        'email',
+        'campaign',
+        'name'
+    )
 );
 
 ```

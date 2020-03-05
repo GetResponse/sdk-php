@@ -1,7 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\CustomFields\GetCustomFields;
 
-use Getresponse\Sdk\Client\Operation\DateRangeSearch;
 use Getresponse\Sdk\Client\Operation\SearchQuery;
 
 class GetCustomFieldsSearchQuery extends SearchQuery

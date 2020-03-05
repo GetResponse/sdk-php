@@ -1,17 +1,15 @@
 <?php
 namespace Getresponse\Sdk\Operation\Model;
 
-use Getresponse\Sdk\Client\Operation\BaseModel;
-
 class RssNewsletterSendDailySettings extends RssNewsletterSendSettings
 {
-    /** @var integer */
+    /** @var int */
     private $sendAtHour;
 
 
     /**
      * @param string $filter
-     * @param integer $sendAtHour
+     * @param int $sendAtHour
      */
     public function __construct($filter, $sendAtHour)
     {

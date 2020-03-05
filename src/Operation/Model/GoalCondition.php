@@ -1,8 +1,6 @@
 <?php
 namespace Getresponse\Sdk\Operation\Model;
 
-use Getresponse\Sdk\Client\Operation\BaseModel;
-
 class GoalCondition extends ConditionType
 {
     /** @var string */
@@ -11,7 +9,7 @@ class GoalCondition extends ConditionType
     /** @var string */
     private $operator;
 
-    /** @var integer */
+    /** @var int */
     private $value = self::FIELD_NOT_SET;
 
     /** @var string */
@@ -33,7 +31,7 @@ class GoalCondition extends ConditionType
 
 
     /**
-     * @param integer $value
+     * @param int $value
      */
     public function setValue($value)
     {

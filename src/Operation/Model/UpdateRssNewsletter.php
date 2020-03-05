@@ -5,6 +5,9 @@ use Getresponse\Sdk\Client\Operation\BaseModel;
 
 class UpdateRssNewsletter extends BaseModel
 {
+    /** @var MessageFlagsArray */
+    private $flags = self::FIELD_NOT_SET;
+
     /** @var string */
     private $rssFeedUrl = self::FIELD_NOT_SET;
 
@@ -29,11 +32,17 @@ class UpdateRssNewsletter extends BaseModel
     /** @var MessageContent */
     private $content = self::FIELD_NOT_SET;
 
-    /** @var MessageFlags */
-    private $flags = self::FIELD_NOT_SET;
-
     /** @var RssNewsletterSendSettings */
     private $sendSettings = self::FIELD_NOT_SET;
+
+
+    /**
+     * @param MessageFlagsArray $flags
+     */
+    public function setFlags(MessageFlagsArray $flags)
+    {
+        $this->flags = $flags;
+    }
 
 
     /**
@@ -109,15 +118,6 @@ class UpdateRssNewsletter extends BaseModel
 
 
     /**
-     * @param MessageFlags $flags
-     */
-    public function setFlags(MessageFlags $flags)
-    {
-        $this->flags = $flags;
-    }
-
-
-    /**
      * @param RssNewsletterSendSettings $sendSettings
      */
     public function setSendSettings(RssNewsletterSendSettings $sendSettings)
@@ -132,6 +132,7 @@ class UpdateRssNewsletter extends BaseModel
     public function jsonSerialize()
     {
         $data = [
+            'flags' => $this->flags,
             'rssFeedUrl' => $this->rssFeedUrl,
             'subject' => $this->subject,
             'name' => $this->name,
@@ -140,7 +141,6 @@ class UpdateRssNewsletter extends BaseModel
             'fromField' => $this->fromField,
             'replyTo' => $this->replyTo,
             'content' => $this->content,
-            'flags' => $this->flags,
             'sendSettings' => $this->sendSettings,
         ];
 
