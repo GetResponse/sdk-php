@@ -14,9 +14,9 @@ class UpdateContactCustomFieldValue extends BaseModel
 
     /**
      * @param string $customFieldId
-     * @param string $value
+     * @param array $values
      */
-    public function __construct($customFieldId, $value)
+    public function __construct($customFieldId, array $values)
     {
         $this->customFieldId = $customFieldId;
         $this->value = $value;
