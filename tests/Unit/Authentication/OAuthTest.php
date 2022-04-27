@@ -9,14 +9,14 @@ use GuzzleHttp\Psr7\Request;
  * Class OAuthTest
  * @package Getresponse\Sdk\Client\Test\Unit\Authentication
  */
-class OAuthTest extends \PHPUnit_Framework_TestCase
+class OAuthTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var OAuth
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new OAuth('abc123');
     }

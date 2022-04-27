@@ -9,7 +9,7 @@ use GuzzleHttp\Psr7\Request;
  * Class GetResponseTest
  * @package Getresponse\Sdk\Client\Test\Unit\Environment
  */
-class GetResponseTest extends \PHPUnit_Framework_TestCase
+class GetResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @test

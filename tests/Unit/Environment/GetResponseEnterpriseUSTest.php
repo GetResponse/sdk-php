@@ -9,14 +9,14 @@ use GuzzleHttp\Psr7\Request;
  * Class GetResponseEnterpriseUSTest
  * @package Getresponse\Sdk\Client\Test\Unit\Environment
  */
-class GetResponseEnterpriseUSTest extends \PHPUnit_Framework_TestCase
+class GetResponseEnterpriseUSTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GetResponseEnterpriseUS
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new GetResponseEnterpriseUS('custom-domain.getresponse360.com');
     }
@@ -45,12 +45,12 @@ class GetResponseEnterpriseUSTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      * @dataProvider invalidDomainProvider
-     * @expectedException \Getresponse\Sdk\Client\Exception\InvalidDomainException
      *
      * @param string $domain
      */
     public function shouldThrowExceptionIfDomainIsNotValid($domain)
     {
+        $this->expectException(\Getresponse\Sdk\Client\Exception\InvalidDomainException::class);
         new GetResponseEnterpriseUS($domain);
     }
 

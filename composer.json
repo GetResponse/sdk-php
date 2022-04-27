@@ -18,9 +18,9 @@
         }
     },
     "require": {
-        "getresponse/sdk-php-client": "^1.0"
+        "getresponse/sdk-php-client": "^1.0|^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8 || ^5.0"
+        "phpunit/phpunit": "^9.5"
     }
 }

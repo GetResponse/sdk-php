@@ -9,14 +9,14 @@ use GuzzleHttp\Psr7\Request;
  * Class ApiKeyTest
  * @package Unit\Authentication
  */
-class ApiKeyTest extends \PHPUnit_Framework_TestCase
+class ApiKeyTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ApiKey
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new ApiKey('abcdef123456');
     }

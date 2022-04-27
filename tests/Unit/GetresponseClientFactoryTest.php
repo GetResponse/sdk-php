@@ -9,7 +9,7 @@ use Getresponse\Sdk\GetresponseClientFactory;
  * Class GetresponseClientFactoryTest
  * @package Getresponse\Sdk\Client\Test\Unit
  */
-class GetresponseClientFactoryTest extends \PHPUnit_Framework_TestCase
+class GetresponseClientFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @test
