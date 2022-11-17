@@ -9,7 +9,7 @@ class GetTags extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/tags';
+    public const METHOD_URL = '/v3/tags';
 
     /** @var GetTagsSearchQuery */
     private $query;

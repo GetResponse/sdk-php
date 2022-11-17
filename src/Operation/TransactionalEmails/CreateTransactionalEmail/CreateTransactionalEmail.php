@@ -11,7 +11,7 @@ class CreateTransactionalEmail extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/transactional-emails';
+    public const METHOD_URL = '/v3/transactional-emails';
 
     /** @var ModelCreateTransactionalEmail */
     protected $data;

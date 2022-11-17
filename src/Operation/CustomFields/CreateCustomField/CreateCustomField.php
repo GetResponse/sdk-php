@@ -11,7 +11,7 @@ class CreateCustomField extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-fields';
+    public const METHOD_URL = '/v3/custom-fields';
 
     /** @var NewCustomField */
     protected $data;

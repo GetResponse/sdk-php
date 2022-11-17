@@ -11,7 +11,7 @@ use Psr\Http\Message\RequestInterface;
  */
 class ApiKey implements AuthenticationProvider
 {
-    const HEADER_PREFIX = 'api-key ';
+    public const HEADER_PREFIX = 'api-key ';
 
     /**
      * @var string

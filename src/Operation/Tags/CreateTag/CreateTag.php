@@ -11,7 +11,7 @@ class CreateTag extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/tags';
+    public const METHOD_URL = '/v3/tags';
 
     /** @var NewTag */
     protected $data;

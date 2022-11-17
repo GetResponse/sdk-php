@@ -9,7 +9,7 @@ class GetPredefinedFields extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/predefined-fields';
+    public const METHOD_URL = '/v3/predefined-fields';
 
     /** @var GetPredefinedFieldsSearchQuery */
     private $query;

@@ -8,7 +8,7 @@ class GetCategory extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/categories/{categoryId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/categories/{categoryId}';
 
     /** @var string */
     private $shopId;

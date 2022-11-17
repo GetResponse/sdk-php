@@ -8,7 +8,7 @@ class GetImports extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/imports';
+    public const METHOD_URL = '/v3/imports';
 
     /** @var GetImportsSearchQuery */
     private $query;

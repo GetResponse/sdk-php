@@ -8,7 +8,7 @@ class GetGdprField extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/gdpr-fields/{gdprFieldId}';
+    public const METHOD_URL = '/v3/gdpr-fields/{gdprFieldId}';
 
     /** @var string */
     private $gdprFieldId;

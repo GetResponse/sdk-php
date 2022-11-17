@@ -8,7 +8,7 @@ class GetTax extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/taxes/{taxId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/taxes/{taxId}';
 
     /** @var string */
     private $shopId;

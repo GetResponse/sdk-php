@@ -40,10 +40,7 @@ class SimpleTaxDetails extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'taxId' => $this->taxId,

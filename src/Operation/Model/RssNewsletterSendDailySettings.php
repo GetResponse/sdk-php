@@ -18,10 +18,7 @@ class RssNewsletterSendDailySettings extends RssNewsletterSendSettings
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'sendAtHour' => $this->sendAtHour,

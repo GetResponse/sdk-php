@@ -11,7 +11,7 @@ use Psr\Http\Message\RequestInterface;
  */
 class GetResponse implements Environment
 {
-    const URL = 'https://api.getresponse.com';
+    public const URL = 'https://api.getresponse.com';
 
     /**
      * @return string

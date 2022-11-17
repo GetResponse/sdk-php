@@ -9,7 +9,7 @@ class DeleteSearchContact extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/search-contacts/{searchContactId}';
+    public const METHOD_URL = '/v3/search-contacts/{searchContactId}';
 
     /** @var string */
     private $searchContactId;

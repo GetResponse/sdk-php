@@ -8,7 +8,7 @@ class GetQuota extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/file-library/quota';
+    public const METHOD_URL = '/v3/file-library/quota';
 
     /**
      * @return string

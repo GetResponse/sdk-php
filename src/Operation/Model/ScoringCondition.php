@@ -18,7 +18,7 @@ class ScoringCondition extends ConditionType
      */
     public function __construct($operatorType)
     {
-        parent::__construct('scoring');
+        parent::__construct('score');
         $this->operatorType = $operatorType;
     }
 
@@ -41,10 +41,7 @@ class ScoringCondition extends ConditionType
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'operatorType' => $this->operatorType,

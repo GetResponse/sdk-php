@@ -11,7 +11,7 @@ class UpdateCategory extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/categories/{categoryId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/categories/{categoryId}';
 
     /** @var ModelUpdateCategory */
     protected $data;

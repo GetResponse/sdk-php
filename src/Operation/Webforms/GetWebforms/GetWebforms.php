@@ -9,7 +9,7 @@ class GetWebforms extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/webforms';
+    public const METHOD_URL = '/v3/webforms';
 
     /** @var GetWebformsSearchQuery */
     private $query;

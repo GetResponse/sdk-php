@@ -78,10 +78,7 @@ class CallbackActions extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'open' => $this->open,

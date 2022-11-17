@@ -8,7 +8,7 @@ class GetTemplates extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/template-categories/{templateCategoryId}/templates';
+    public const METHOD_URL = '/v3/template-categories/{templateCategoryId}/templates';
 
     /** @var string */
     private $templateCategoryId;

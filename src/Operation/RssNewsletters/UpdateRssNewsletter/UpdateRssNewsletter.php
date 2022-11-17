@@ -11,7 +11,7 @@ class UpdateRssNewsletter extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/rss-newsletters/{rssNewsletterId}';
+    public const METHOD_URL = '/v3/rss-newsletters/{rssNewsletterId}';
 
     /** @var ModelUpdateRssNewsletter */
     protected $data;

@@ -2,21 +2,23 @@
 
 namespace Getresponse\Sdk\Client\Test\Unit\Environment;
 
+use Getresponse\Sdk\Client\Exception\InvalidDomainException;
 use Getresponse\Sdk\Environment\GetResponseEnterpriseUS;
 use GuzzleHttp\Psr7\Request;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class GetResponseEnterpriseUSTest
  * @package Getresponse\Sdk\Client\Test\Unit\Environment
  */
-class GetResponseEnterpriseUSTest extends \PHPUnit_Framework_TestCase
+class GetResponseEnterpriseUSTest extends TestCase
 {
     /**
      * @var GetResponseEnterpriseUS
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new GetResponseEnterpriseUS('custom-domain.getresponse360.com');
     }
@@ -45,12 +47,12 @@ class GetResponseEnterpriseUSTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      * @dataProvider invalidDomainProvider
-     * @expectedException \Getresponse\Sdk\Client\Exception\InvalidDomainException
      *
      * @param string $domain
      */
     public function shouldThrowExceptionIfDomainIsNotValid($domain)
     {
+        $this->expectException(InvalidDomainException::class);
         new GetResponseEnterpriseUS($domain);
     }
 

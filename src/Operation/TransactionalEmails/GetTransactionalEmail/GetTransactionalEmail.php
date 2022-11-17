@@ -8,7 +8,7 @@ class GetTransactionalEmail extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/transactional-emails/{transactionalEmailId}';
+    public const METHOD_URL = '/v3/transactional-emails/{transactionalEmailId}';
 
     /** @var string */
     private $transactionalEmailId;

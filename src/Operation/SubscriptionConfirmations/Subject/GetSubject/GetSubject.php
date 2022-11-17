@@ -8,7 +8,7 @@ class GetSubject extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/subscription-confirmations/subject/{languageCode}';
+    public const METHOD_URL = '/v3/subscription-confirmations/subject/{languageCode}';
 
     /** @var string */
     private $languageCode;

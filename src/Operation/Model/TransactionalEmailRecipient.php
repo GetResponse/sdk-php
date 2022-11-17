@@ -30,10 +30,7 @@ class TransactionalEmailRecipient extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'email' => $this->email,

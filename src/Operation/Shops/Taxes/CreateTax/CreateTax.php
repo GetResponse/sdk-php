@@ -11,7 +11,7 @@ class CreateTax extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/taxes';
+    public const METHOD_URL = '/v3/shops/{shopId}/taxes';
 
     /** @var NewTax */
     protected $data;

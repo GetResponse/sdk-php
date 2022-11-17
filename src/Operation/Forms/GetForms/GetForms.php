@@ -9,7 +9,7 @@ class GetForms extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/forms';
+    public const METHOD_URL = '/v3/forms';
 
     /** @var GetFormsSearchQuery */
     private $query;

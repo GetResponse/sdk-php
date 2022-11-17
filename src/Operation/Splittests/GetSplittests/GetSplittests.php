@@ -9,7 +9,7 @@ class GetSplittests extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/splittests';
+    public const METHOD_URL = '/v3/splittests';
 
     /** @var GetSplittestsSearchQuery */
     private $query;

@@ -9,7 +9,7 @@ class GetFolders extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/file-library/folders';
+    public const METHOD_URL = '/v3/file-library/folders';
 
     /** @var GetFoldersSearchQuery */
     private $query;

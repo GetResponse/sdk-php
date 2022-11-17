@@ -11,7 +11,7 @@ class CreateOrder extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/orders';
+    public const METHOD_URL = '/v3/shops/{shopId}/orders';
 
     /** @var NewOrder */
     protected $data;

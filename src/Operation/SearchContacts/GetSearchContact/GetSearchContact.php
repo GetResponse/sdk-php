@@ -8,7 +8,7 @@ class GetSearchContact extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/search-contacts/{searchContactId}';
+    public const METHOD_URL = '/v3/search-contacts/{searchContactId}';
 
     /** @var string */
     private $searchContactId;

@@ -8,7 +8,7 @@ class GetTimezones extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/timezones';
+    public const METHOD_URL = '/v3/accounts/timezones';
 
     /** @var GetTimezonesFields */
     private $fields;

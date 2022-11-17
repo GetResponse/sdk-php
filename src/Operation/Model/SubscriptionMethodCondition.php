@@ -41,10 +41,7 @@ class SubscriptionMethodCondition extends ConditionType
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'method' => $this->method,

@@ -8,7 +8,7 @@ class GetStatistics extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/transactional-emails/statistics';
+    public const METHOD_URL = '/v3/transactional-emails/statistics';
 
     /** @var GetStatisticsSearchQuery */
     private $query;

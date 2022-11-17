@@ -9,7 +9,7 @@ class GetActivities extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/newsletters/{newsletterId}/activities';
+    public const METHOD_URL = '/v3/newsletters/{newsletterId}/activities';
 
     /** @var string */
     private $newsletterId;

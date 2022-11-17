@@ -9,7 +9,7 @@ class GetSuppressions extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/suppressions';
+    public const METHOD_URL = '/v3/suppressions';
 
     /** @var GetSuppressionsSearchQuery */
     private $query;

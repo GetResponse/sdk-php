@@ -11,7 +11,7 @@ class UpdateCustomEvent extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-events/{customEventId}';
+    public const METHOD_URL = '/v3/custom-events/{customEventId}';
 
     /** @var ModelUpdateCustomEvent */
     protected $data;

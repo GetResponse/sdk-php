@@ -11,7 +11,7 @@ class CreateCategory extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/categories';
+    public const METHOD_URL = '/v3/shops/{shopId}/categories';
 
     /** @var NewCategory */
     protected $data;

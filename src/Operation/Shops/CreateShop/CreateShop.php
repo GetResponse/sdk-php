@@ -11,7 +11,7 @@ class CreateShop extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops';
+    public const METHOD_URL = '/v3/shops';
 
     /** @var NewShop */
     protected $data;

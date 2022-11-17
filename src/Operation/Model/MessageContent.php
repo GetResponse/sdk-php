@@ -30,10 +30,7 @@ class MessageContent extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'html' => $this->html,

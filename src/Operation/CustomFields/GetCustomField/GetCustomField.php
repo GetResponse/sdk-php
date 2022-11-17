@@ -8,7 +8,7 @@ class GetCustomField extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-fields/{customFieldId}';
+    public const METHOD_URL = '/v3/custom-fields/{customFieldId}';
 
     /** @var string */
     private $customFieldId;

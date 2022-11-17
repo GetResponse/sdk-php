@@ -9,7 +9,7 @@ class GetClickTracks extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/click-tracks';
+    public const METHOD_URL = '/v3/click-tracks';
 
     /** @var GetClickTracksSearchQuery */
     private $query;

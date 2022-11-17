@@ -9,7 +9,7 @@ class DeleteProduct extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}';
 
     /** @var string */
     private $shopId;

@@ -9,7 +9,7 @@ class GetMetaFields extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/meta-fields';
+    public const METHOD_URL = '/v3/shops/{shopId}/meta-fields';
 
     /** @var string */
     private $shopId;

@@ -9,7 +9,7 @@ class GetRssNewslettersStatistics extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/rss-newsletters/statistics';
+    public const METHOD_URL = '/v3/rss-newsletters/statistics';
 
     /** @var GetRssNewslettersStatisticsSearchQuery */
     private $query;

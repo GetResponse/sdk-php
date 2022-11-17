@@ -11,7 +11,7 @@ class CreateCart extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/carts';
+    public const METHOD_URL = '/v3/shops/{shopId}/carts';
 
     /** @var NewCart */
     protected $data;

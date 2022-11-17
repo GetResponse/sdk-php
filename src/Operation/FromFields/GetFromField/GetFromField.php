@@ -8,7 +8,7 @@ class GetFromField extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/from-fields/{fromFieldId}';
+    public const METHOD_URL = '/v3/from-fields/{fromFieldId}';
 
     /** @var string */
     private $fromFieldId;

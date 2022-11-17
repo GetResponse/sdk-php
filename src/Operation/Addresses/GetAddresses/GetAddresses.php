@@ -9,7 +9,7 @@ class GetAddresses extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/addresses';
+    public const METHOD_URL = '/v3/addresses';
 
     /** @var GetAddressesSearchQuery */
     private $query;

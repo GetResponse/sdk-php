@@ -126,10 +126,7 @@ class UpdateAccount extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'firstName' => $this->firstName,

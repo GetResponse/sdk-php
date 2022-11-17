@@ -9,7 +9,7 @@ class GetIndustries extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/industries';
+    public const METHOD_URL = '/v3/accounts/industries';
 
     /** @var Pagination */
     private $pagination;

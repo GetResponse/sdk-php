@@ -9,7 +9,7 @@ class CancelNewsletter extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/newsletters/{newsletterId}/cancel';
+    public const METHOD_URL = '/v3/newsletters/{newsletterId}/cancel';
 
     /** @var string */
     private $newsletterId;

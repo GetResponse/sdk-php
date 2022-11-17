@@ -9,7 +9,7 @@ class GetPipelines extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/pipelines';
+    public const METHOD_URL = '/v3/pipelines';
 
     /** @var GetPipelinesSortParams */
     private $sort;

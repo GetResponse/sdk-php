@@ -11,7 +11,7 @@ class CreatePredefinedField extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/predefined-fields';
+    public const METHOD_URL = '/v3/predefined-fields';
 
     /** @var NewPredefinedField */
     protected $data;

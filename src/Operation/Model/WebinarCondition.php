@@ -27,10 +27,7 @@ class WebinarCondition extends ConditionType
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'scope' => $this->scope,

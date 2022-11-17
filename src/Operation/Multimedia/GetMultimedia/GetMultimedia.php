@@ -9,7 +9,7 @@ class GetMultimedia extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/multimedia';
+    public const METHOD_URL = '/v3/multimedia';
 
     /** @var Pagination */
     private $pagination;

@@ -54,10 +54,7 @@ class ECommerceProductPurchasedCondition extends ConditionType
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'shopScope' => $this->shopScope,

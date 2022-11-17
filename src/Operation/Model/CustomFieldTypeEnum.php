@@ -5,21 +5,21 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 
 class CustomFieldTypeEnum extends BaseEnum
 {
-    const TEXT = 'text';
-    const TEXTAREA = 'textarea';
-    const RADIO = 'radio';
-    const CHECKBOX = 'checkbox';
-    const SINGLE_SELECT = 'single_select';
-    const MULTI_SELECT = 'multi_select';
-    const NUMBER = 'number';
-    const DATE = 'date';
-    const DATETIME = 'datetime';
-    const COUNTRY = 'country';
-    const CURRENCY = 'currency';
-    const PHONE = 'phone';
-    const GENDER = 'gender';
-    const IP = 'ip';
-    const URL = 'url';
+    public const TEXT = 'text';
+    public const TEXTAREA = 'textarea';
+    public const RADIO = 'radio';
+    public const CHECKBOX = 'checkbox';
+    public const SINGLE_SELECT = 'single_select';
+    public const MULTI_SELECT = 'multi_select';
+    public const NUMBER = 'number';
+    public const DATE = 'date';
+    public const DATETIME = 'datetime';
+    public const COUNTRY = 'country';
+    public const CURRENCY = 'currency';
+    public const PHONE = 'phone';
+    public const GENDER = 'gender';
+    public const IP = 'ip';
+    public const URL = 'url';
 
     /**
      * @return bool
@@ -58,7 +58,7 @@ class CustomFieldTypeEnum extends BaseEnum
     /**
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): string
     {
         return $this->value;
     }

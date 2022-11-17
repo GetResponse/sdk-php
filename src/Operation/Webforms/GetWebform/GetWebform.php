@@ -8,7 +8,7 @@ class GetWebform extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/webforms/{webformId}';
+    public const METHOD_URL = '/v3/webforms/{webformId}';
 
     /** @var string */
     private $webformId;

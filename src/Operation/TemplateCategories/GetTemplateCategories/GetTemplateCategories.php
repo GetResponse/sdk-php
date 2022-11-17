@@ -9,7 +9,7 @@ class GetTemplateCategories extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/template-categories';
+    public const METHOD_URL = '/v3/template-categories';
 
     /** @var GetTemplateCategoriesSearchQuery */
     private $query;

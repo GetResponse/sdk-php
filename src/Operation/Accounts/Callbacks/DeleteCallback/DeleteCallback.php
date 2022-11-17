@@ -9,7 +9,7 @@ class DeleteCallback extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/callbacks';
+    public const METHOD_URL = '/v3/accounts/callbacks';
 
     /**
      * @return string

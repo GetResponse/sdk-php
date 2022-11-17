@@ -9,7 +9,7 @@ class GetWorkflows extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/workflow';
+    public const METHOD_URL = '/v3/workflow';
 
     /** @var Pagination */
     private $pagination;

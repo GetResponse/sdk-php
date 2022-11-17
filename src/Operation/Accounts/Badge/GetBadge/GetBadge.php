@@ -8,7 +8,7 @@ class GetBadge extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/badge';
+    public const METHOD_URL = '/v3/accounts/badge';
 
     /**
      * @return string

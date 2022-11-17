@@ -5,8 +5,8 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 
 class StringBooleanEnum extends BaseEnum
 {
-    const TRUE = 'true';
-    const FALSE = 'false';
+    public const TRUE = 'true';
+    public const FALSE = 'false';
 
     /**
      * @return bool
@@ -32,7 +32,7 @@ class StringBooleanEnum extends BaseEnum
     /**
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): string
     {
         return $this->value;
     }

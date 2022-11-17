@@ -9,7 +9,7 @@ class GetVariants extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants';
 
     /** @var string */
     private $shopId;

@@ -9,7 +9,7 @@ class DeleteCustomField extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-fields/{customFieldId}';
+    public const METHOD_URL = '/v3/custom-fields/{customFieldId}';
 
     /** @var string */
     private $customFieldId;

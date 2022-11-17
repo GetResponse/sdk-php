@@ -9,7 +9,7 @@ class GetTransactionalEmails extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/transactional-emails';
+    public const METHOD_URL = '/v3/transactional-emails';
 
     /** @var GetTransactionalEmailsSearchQuery */
     private $query;

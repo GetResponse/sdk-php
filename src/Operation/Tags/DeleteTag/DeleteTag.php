@@ -9,7 +9,7 @@ class DeleteTag extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/tags/{tagId}';
+    public const METHOD_URL = '/v3/tags/{tagId}';
 
     /** @var string */
     private $tagId;

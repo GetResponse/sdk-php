@@ -8,7 +8,7 @@ class GetNewsletter extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/newsletters/{newsletterId}';
+    public const METHOD_URL = '/v3/newsletters/{newsletterId}';
 
     /** @var string */
     private $newsletterId;

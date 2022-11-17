@@ -8,7 +8,7 @@ class GetCampaignStatisticsRemovals extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/statistics/removals';
+    public const METHOD_URL = '/v3/campaigns/statistics/removals';
 
     /** @var GetCampaignStatisticsRemovalsSearchQuery */
     private $query;

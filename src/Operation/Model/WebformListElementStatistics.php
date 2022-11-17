@@ -23,10 +23,7 @@ class WebformListElementStatistics extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'opened' => $this->opened,

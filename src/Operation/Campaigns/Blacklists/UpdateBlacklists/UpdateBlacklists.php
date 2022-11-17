@@ -11,7 +11,7 @@ class UpdateBlacklists extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/{campaignId}/blacklists';
+    public const METHOD_URL = '/v3/campaigns/{campaignId}/blacklists';
 
     /** @var UpdateBlacklist */
     protected $data;

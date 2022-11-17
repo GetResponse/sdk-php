@@ -9,7 +9,7 @@ class GetLoginHistory extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/login-history';
+    public const METHOD_URL = '/v3/accounts/login-history';
 
     /** @var Pagination */
     private $pagination;

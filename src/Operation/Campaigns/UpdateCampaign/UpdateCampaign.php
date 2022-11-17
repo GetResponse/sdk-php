@@ -11,7 +11,7 @@ class UpdateCampaign extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/{campaignId}';
+    public const METHOD_URL = '/v3/campaigns/{campaignId}';
 
     /** @var ModelUpdateCampaign */
     protected $data;

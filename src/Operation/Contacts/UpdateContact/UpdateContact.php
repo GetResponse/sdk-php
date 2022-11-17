@@ -11,7 +11,7 @@ class UpdateContact extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/contacts/{contactId}';
+    public const METHOD_URL = '/v3/contacts/{contactId}';
 
     /** @var ModelUpdateContact */
     protected $data;

@@ -9,7 +9,7 @@ class GetAutoresponders extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/autoresponders';
+    public const METHOD_URL = '/v3/autoresponders';
 
     /** @var GetAutorespondersSearchQuery */
     private $query;

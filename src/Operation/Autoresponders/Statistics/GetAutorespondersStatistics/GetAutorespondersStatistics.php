@@ -9,7 +9,7 @@ class GetAutorespondersStatistics extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/autoresponders/statistics';
+    public const METHOD_URL = '/v3/autoresponders/statistics';
 
     /** @var GetAutorespondersStatisticsSearchQuery */
     private $query;

@@ -11,7 +11,7 @@ class UpdateTag extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/tags/{tagId}';
+    public const METHOD_URL = '/v3/tags/{tagId}';
 
     /** @var ModelUpdateTag */
     protected $data;

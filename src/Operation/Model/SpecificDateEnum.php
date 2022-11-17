@@ -5,14 +5,14 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 
 class SpecificDateEnum extends BaseEnum
 {
-    const TODAY = 'today';
-    const YESTERDAY = 'yesterday';
-    const LAST_7_DAYS = 'last_7_days';
-    const LAST_30_DAYS = 'last_30_days';
-    const THIS_WEEK = 'this_week';
-    const LAST_WEEK = 'last_week';
-    const THIS_MONTH = 'this_month';
-    const LAST_MONTH = 'last_month';
+    public const TODAY = 'today';
+    public const YESTERDAY = 'yesterday';
+    public const LAST_7_DAYS = 'last_7_days';
+    public const LAST_30_DAYS = 'last_30_days';
+    public const THIS_WEEK = 'this_week';
+    public const LAST_WEEK = 'last_week';
+    public const THIS_MONTH = 'this_month';
+    public const LAST_MONTH = 'last_month';
 
     /**
      * @return bool

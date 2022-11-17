@@ -20,10 +20,7 @@ class SectionCustomSubscriptionDate extends SearchContactSection
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'customDate' => $this->customDate,

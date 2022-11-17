@@ -9,7 +9,7 @@ class GetStages extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/pipelines/{pipelineId}/stages';
+    public const METHOD_URL = '/v3/pipelines/{pipelineId}/stages';
 
     /** @var string */
     private $pipelineId;

@@ -11,7 +11,7 @@ class UpdateAccount extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts';
+    public const METHOD_URL = '/v3/accounts';
 
     /** @var ModelUpdateAccount */
     protected $data;

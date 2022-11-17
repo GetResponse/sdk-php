@@ -11,7 +11,7 @@ class UpdateAutoresponder extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/autoresponders/{autoresponderId}';
+    public const METHOD_URL = '/v3/autoresponders/{autoresponderId}';
 
     /** @var ModelUpdateAutoresponder */
     protected $data;

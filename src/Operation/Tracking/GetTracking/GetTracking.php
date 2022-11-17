@@ -8,7 +8,7 @@ class GetTracking extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/tracking';
+    public const METHOD_URL = '/v3/tracking';
 
     /**
      * @return string

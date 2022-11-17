@@ -8,7 +8,7 @@ class GetCampaignStatisticsSummary extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/statistics/summary';
+    public const METHOD_URL = '/v3/campaigns/statistics/summary';
 
     /** @var GetCampaignStatisticsSummarySearchQuery */
     private $query;

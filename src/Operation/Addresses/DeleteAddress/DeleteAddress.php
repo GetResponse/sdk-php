@@ -9,7 +9,7 @@ class DeleteAddress extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/addresses/{addressId}';
+    public const METHOD_URL = '/v3/addresses/{addressId}';
 
     /** @var string */
     private $addressId;

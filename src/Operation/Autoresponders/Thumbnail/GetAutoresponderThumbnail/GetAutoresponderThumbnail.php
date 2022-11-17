@@ -8,7 +8,7 @@ class GetAutoresponderThumbnail extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/autoresponders/{autoresponderId}/thumbnail';
+    public const METHOD_URL = '/v3/autoresponders/{autoresponderId}/thumbnail';
 
     /** @var string */
     private $autoresponderId;

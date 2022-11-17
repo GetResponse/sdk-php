@@ -11,7 +11,7 @@ class CreateMetaField extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/meta-fields';
+    public const METHOD_URL = '/v3/shops/{shopId}/meta-fields';
 
     /** @var NewMetaField */
     protected $data;

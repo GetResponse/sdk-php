@@ -9,7 +9,7 @@ class GetShops extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops';
+    public const METHOD_URL = '/v3/shops';
 
     /** @var GetShopsSearchQuery */
     private $query;

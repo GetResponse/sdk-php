@@ -11,7 +11,7 @@ class CreateProduct extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products';
+    public const METHOD_URL = '/v3/shops/{shopId}/products';
 
     /** @var NewProduct */
     protected $data;

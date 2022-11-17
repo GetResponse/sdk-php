@@ -8,7 +8,7 @@ class GetCampaign extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/{campaignId}';
+    public const METHOD_URL = '/v3/campaigns/{campaignId}';
 
     /** @var string */
     private $campaignId;

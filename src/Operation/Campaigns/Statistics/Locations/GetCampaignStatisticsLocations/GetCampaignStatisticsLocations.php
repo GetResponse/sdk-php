@@ -8,7 +8,7 @@ class GetCampaignStatisticsLocations extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/statistics/locations';
+    public const METHOD_URL = '/v3/campaigns/statistics/locations';
 
     /** @var GetCampaignStatisticsLocationsSearchQuery */
     private $query;

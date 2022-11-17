@@ -11,7 +11,7 @@ class UpdateCallback extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/callbacks';
+    public const METHOD_URL = '/v3/accounts/callbacks';
 
     /** @var UpdateCallbacks */
     protected $data;

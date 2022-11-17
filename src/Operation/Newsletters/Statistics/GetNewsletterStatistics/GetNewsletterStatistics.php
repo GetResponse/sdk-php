@@ -9,7 +9,7 @@ class GetNewsletterStatistics extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/newsletters/{newsletterId}/statistics';
+    public const METHOD_URL = '/v3/newsletters/{newsletterId}/statistics';
 
     /** @var string */
     private $newsletterId;

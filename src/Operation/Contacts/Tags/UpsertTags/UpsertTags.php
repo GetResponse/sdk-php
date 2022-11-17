@@ -11,7 +11,7 @@ class UpsertTags extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/contacts/{contactId}/tags';
+    public const METHOD_URL = '/v3/contacts/{contactId}/tags';
 
     /** @var UpsertContactTags */
     protected $data;

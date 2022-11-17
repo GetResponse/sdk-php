@@ -11,7 +11,7 @@ class CreateContact extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/contacts';
+    public const METHOD_URL = '/v3/contacts';
 
     /** @var NewContact */
     protected $data;

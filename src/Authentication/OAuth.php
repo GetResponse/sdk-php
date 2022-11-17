@@ -11,7 +11,7 @@ use Psr\Http\Message\RequestInterface;
  */
 class OAuth implements AuthenticationProvider
 {
-    const HEADER_PREFIX = 'Bearer ';
+    public const HEADER_PREFIX = 'Bearer ';
 
     /**
      * @var string

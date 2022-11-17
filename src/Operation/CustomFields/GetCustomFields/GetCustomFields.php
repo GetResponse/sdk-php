@@ -9,7 +9,7 @@ class GetCustomFields extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-fields';
+    public const METHOD_URL = '/v3/custom-fields';
 
     /** @var GetCustomFieldsSearchQuery */
     private $query;

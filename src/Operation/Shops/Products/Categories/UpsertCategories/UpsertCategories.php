@@ -11,7 +11,7 @@ class UpsertCategories extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/categories';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/categories';
 
     /** @var UpsertProductCategory */
     protected $data;

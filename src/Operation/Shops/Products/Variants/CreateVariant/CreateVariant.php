@@ -11,7 +11,7 @@ class CreateVariant extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants';
 
     /** @var NewProductVariant */
     protected $data;

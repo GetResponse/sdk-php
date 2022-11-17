@@ -9,7 +9,7 @@ class DeletePredefinedField extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/predefined-fields/{predefinedFieldId}';
+    public const METHOD_URL = '/v3/predefined-fields/{predefinedFieldId}';
 
     /** @var string */
     private $predefinedFieldId;

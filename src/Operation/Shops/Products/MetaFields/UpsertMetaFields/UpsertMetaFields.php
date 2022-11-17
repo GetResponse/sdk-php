@@ -11,7 +11,7 @@ class UpsertMetaFields extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/meta-fields';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/meta-fields';
 
     /** @var UpsertMetaField */
     protected $data;

@@ -11,7 +11,7 @@ class UpdateProduct extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}';
 
     /** @var ModelUpdateProduct */
     protected $data;

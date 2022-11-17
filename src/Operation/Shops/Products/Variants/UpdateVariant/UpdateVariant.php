@@ -11,7 +11,7 @@ class UpdateVariant extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants/{variantId}';
+    public const METHOD_URL = '/v3/shops/{shopId}/products/{productId}/variants/{variantId}';
 
     /** @var UpdateProductVariant */
     protected $data;

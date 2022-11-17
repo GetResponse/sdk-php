@@ -9,7 +9,7 @@ class GetLandingPages extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/landing-pages';
+    public const METHOD_URL = '/v3/landing-pages';
 
     /** @var GetLandingPagesSearchQuery */
     private $query;

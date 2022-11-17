@@ -9,7 +9,7 @@ class GetOrders extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/shops/{shopId}/orders';
+    public const METHOD_URL = '/v3/shops/{shopId}/orders';
 
     /** @var string */
     private $shopId;

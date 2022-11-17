@@ -8,7 +8,7 @@ class GetBilling extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/billing';
+    public const METHOD_URL = '/v3/accounts/billing';
 
     /** @var GetBillingFields */
     private $fields;

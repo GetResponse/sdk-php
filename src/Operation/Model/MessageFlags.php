@@ -5,9 +5,9 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 
 class MessageFlags extends BaseEnum
 {
-    const OPENRATE = 'openrate';
-    const CLICKTRACK = 'clicktrack';
-    const GOOGLE_ANALYTICS = 'google_analytics';
+    public const OPENRATE = 'openrate';
+    public const CLICKTRACK = 'clicktrack';
+    public const GOOGLE_ANALYTICS = 'google_analytics';
 
     /**
      * @return boolean
@@ -31,10 +31,7 @@ class MessageFlags extends BaseEnum
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         return $this->value;
     }

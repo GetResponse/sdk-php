@@ -11,7 +11,7 @@ class CreateSearchContact extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/search-contacts';
+    public const METHOD_URL = '/v3/search-contacts';
 
     /** @var NewSearchContacts */
     protected $data;

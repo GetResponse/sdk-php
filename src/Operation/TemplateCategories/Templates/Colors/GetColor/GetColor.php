@@ -8,7 +8,7 @@ class GetColor extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/template-categories/{templateCategoryId}/templates/{templateId}/colors/{colorId}';
+    public const METHOD_URL = '/v3/template-categories/{templateCategoryId}/templates/{templateId}/colors/{colorId}';
 
     /** @var string */
     private $templateCategoryId;

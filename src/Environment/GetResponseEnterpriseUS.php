@@ -8,7 +8,7 @@ namespace Getresponse\Sdk\Environment;
  */
 class GetResponseEnterpriseUS extends GetResponseEnterprise
 {
-    const URL = 'https://api3.getresponse360.com';
+    public const URL = 'https://api3.getresponse360.com';
 
     /**
      * @return string

@@ -8,7 +8,7 @@ class GetStage extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/pipelines/{pipelineId}/stages/{pipelineStageId}';
+    public const METHOD_URL = '/v3/pipelines/{pipelineId}/stages/{pipelineStageId}';
 
     /** @var string */
     private $pipelineId;

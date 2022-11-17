@@ -8,7 +8,7 @@ class GetAccounts extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts';
+    public const METHOD_URL = '/v3/accounts';
 
     /** @var GetAccountsFields */
     private $fields;

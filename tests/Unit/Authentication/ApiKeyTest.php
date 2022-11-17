@@ -4,19 +4,20 @@ namespace Getresponse\Sdk\Client\Test\Unit\Authentication;
 
 use Getresponse\Sdk\Authentication\ApiKey;
 use GuzzleHttp\Psr7\Request;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class ApiKeyTest
  * @package Unit\Authentication
  */
-class ApiKeyTest extends \PHPUnit_Framework_TestCase
+class ApiKeyTest extends TestCase
 {
     /**
      * @var ApiKey
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new ApiKey('abcdef123456');
     }

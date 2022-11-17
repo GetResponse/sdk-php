@@ -8,7 +8,7 @@ class GetFile extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/file-library/files/{fileId}';
+    public const METHOD_URL = '/v3/file-library/files/{fileId}';
 
     /** @var string */
     private $fileId;

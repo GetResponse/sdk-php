@@ -5,8 +5,8 @@ use Getresponse\Sdk\Client\Operation\BaseEnum;
 
 class StatusEnum extends BaseEnum
 {
-    const ENABLED = 'enabled';
-    const DISABLED = 'disabled';
+    public const ENABLED = 'enabled';
+    public const DISABLED = 'disabled';
 
     /**
      * @return bool
@@ -32,7 +32,7 @@ class StatusEnum extends BaseEnum
     /**
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): string
     {
         return $this->value;
     }

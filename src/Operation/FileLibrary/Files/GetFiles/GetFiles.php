@@ -9,7 +9,7 @@ class GetFiles extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/file-library/files';
+    public const METHOD_URL = '/v3/file-library/files';
 
     /** @var GetFilesSearchQuery */
     private $query;

@@ -8,7 +8,7 @@ class GetWorkflow extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/workflow/{workflowId}';
+    public const METHOD_URL = '/v3/workflow/{workflowId}';
 
     /** @var string */
     private $workflowId;

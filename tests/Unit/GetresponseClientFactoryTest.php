@@ -4,12 +4,13 @@ namespace Getresponse\Sdk\Client\Test\Unit;
 
 use Getresponse\Sdk\Client\GetresponseClient;
 use Getresponse\Sdk\GetresponseClientFactory;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class GetresponseClientFactoryTest
  * @package Getresponse\Sdk\Client\Test\Unit
  */
-class GetresponseClientFactoryTest extends \PHPUnit_Framework_TestCase
+class GetresponseClientFactoryTest extends TestCase
 {
     /**
      * @test

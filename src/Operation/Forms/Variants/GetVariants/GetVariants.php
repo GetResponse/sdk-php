@@ -8,7 +8,7 @@ class GetVariants extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/forms/{formId}/variants';
+    public const METHOD_URL = '/v3/forms/{formId}/variants';
 
     /** @var string */
     private $formId;

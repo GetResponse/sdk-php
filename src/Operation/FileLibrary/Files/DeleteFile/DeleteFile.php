@@ -9,7 +9,7 @@ class DeleteFile extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/file-library/files/{fileId}';
+    public const METHOD_URL = '/v3/file-library/files/{fileId}';
 
     /** @var string */
     private $fileId;

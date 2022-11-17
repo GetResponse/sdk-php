@@ -8,7 +8,7 @@ class GetForm extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/forms/{formId}';
+    public const METHOD_URL = '/v3/forms/{formId}';
 
     /** @var string */
     private $formId;

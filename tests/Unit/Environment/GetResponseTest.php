@@ -4,12 +4,13 @@ namespace Getresponse\Sdk\Client\Test\Unit\Environment;
 
 use Getresponse\Sdk\Environment\GetResponse;
 use GuzzleHttp\Psr7\Request;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class GetResponseTest
  * @package Getresponse\Sdk\Client\Test\Unit\Environment
  */
-class GetResponseTest extends \PHPUnit_Framework_TestCase
+class GetResponseTest extends TestCase
 {
     /**
      * @test

@@ -8,7 +8,7 @@ class GetBody extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/subscription-confirmations/body/{languageCode}';
+    public const METHOD_URL = '/v3/subscription-confirmations/body/{languageCode}';
 
     /** @var string */
     private $languageCode;

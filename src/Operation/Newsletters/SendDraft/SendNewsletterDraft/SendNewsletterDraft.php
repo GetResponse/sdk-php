@@ -11,7 +11,7 @@ class SendNewsletterDraft extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/newsletters/send-draft';
+    public const METHOD_URL = '/v3/newsletters/send-draft';
 
     /** @var ModelSendNewsletterDraft */
     protected $data;

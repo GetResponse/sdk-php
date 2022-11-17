@@ -8,7 +8,7 @@ class GetBlacklists extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/{campaignId}/blacklists';
+    public const METHOD_URL = '/v3/campaigns/{campaignId}/blacklists';
 
     /** @var string */
     private $campaignId;

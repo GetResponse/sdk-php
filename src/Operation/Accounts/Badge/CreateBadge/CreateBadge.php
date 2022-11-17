@@ -4,22 +4,23 @@ namespace Getresponse\Sdk\Operation\Accounts\Badge\CreateBadge;
 use Getresponse\Sdk\Client\Exception\InvalidCommandDataException;
 use Getresponse\Sdk\Client\Operation\CommandOperation;
 use Getresponse\Sdk\Client\Operation\Operation;
+use Getresponse\Sdk\Operation\Model\AccountBadgeStatus;
 use Getresponse\Sdk\OperationVersionTrait;
 
 class CreateBadge extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/accounts/badge';
+    public const METHOD_URL = '/v3/accounts/badge';
 
-    /** @var \Getresponse\Sdk\Operation\Model\AccountBadgeStatus */
+    /** @var AccountBadgeStatus */
     protected $data;
 
 
     /**
-     * @param \Getresponse\Sdk\Operation\Model\AccountBadgeStatus $data
+     * @param AccountBadgeStatus $data
      */
-    public function __construct(\Getresponse\Sdk\Operation\Model\AccountBadgeStatus $data)
+    public function __construct(AccountBadgeStatus $data)
     {
         $this->data = $data;
     }

@@ -11,7 +11,7 @@ class UpdateWorkflow extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/workflow/{workflowId}';
+    public const METHOD_URL = '/v3/workflow/{workflowId}';
 
     /** @var ModelUpdateWorkflow */
     protected $data;

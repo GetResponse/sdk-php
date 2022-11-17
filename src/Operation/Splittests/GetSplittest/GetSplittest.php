@@ -8,7 +8,7 @@ class GetSplittest extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/splittests/{splittestId}';
+    public const METHOD_URL = '/v3/splittests/{splittestId}';
 
     /** @var string */
     private $splittestId;

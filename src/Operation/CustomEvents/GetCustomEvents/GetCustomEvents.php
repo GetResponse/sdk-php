@@ -9,7 +9,7 @@ class GetCustomEvents extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/custom-events';
+    public const METHOD_URL = '/v3/custom-events';
 
     /** @var GetCustomEventsSearchQuery */
     private $query;

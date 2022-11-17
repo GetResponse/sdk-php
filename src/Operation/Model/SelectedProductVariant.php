@@ -50,10 +50,7 @@ class SelectedProductVariant extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'variantId' => $this->variantId,

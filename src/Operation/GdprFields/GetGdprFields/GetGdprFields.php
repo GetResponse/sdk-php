@@ -9,7 +9,7 @@ class GetGdprFields extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/gdpr-fields';
+    public const METHOD_URL = '/v3/gdpr-fields';
 
     /** @var GetGdprFieldsSortParams */
     private $sort;

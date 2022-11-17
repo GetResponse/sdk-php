@@ -8,7 +8,7 @@ class GetCampaignStatisticsSubscriptions extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/statistics/subscriptions';
+    public const METHOD_URL = '/v3/campaigns/statistics/subscriptions';
 
     /** @var GetCampaignStatisticsSubscriptionsSearchQuery */
     private $query;

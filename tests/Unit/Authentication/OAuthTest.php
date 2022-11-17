@@ -4,19 +4,20 @@ namespace Getresponse\Sdk\Client\Test\Unit\Authentication;
 
 use Getresponse\Sdk\Authentication\OAuth;
 use GuzzleHttp\Psr7\Request;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class OAuthTest
  * @package Getresponse\Sdk\Client\Test\Unit\Authentication
  */
-class OAuthTest extends \PHPUnit_Framework_TestCase
+class OAuthTest extends TestCase
 {
     /**
      * @var OAuth
      */
     private $systemUnderTest;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->systemUnderTest = new OAuth('abc123');
     }

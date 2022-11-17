@@ -30,10 +30,7 @@ class UpdateCustomEvent extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'name' => $this->name,

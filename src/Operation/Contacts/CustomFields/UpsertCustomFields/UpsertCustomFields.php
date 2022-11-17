@@ -11,7 +11,7 @@ class UpsertCustomFields extends CommandOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/contacts/{contactId}/custom-fields';
+    public const METHOD_URL = '/v3/contacts/{contactId}/custom-fields';
 
     /** @var UpsertContactCustomFields */
     protected $data;

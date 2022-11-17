@@ -95,10 +95,7 @@ abstract class RssNewsletterSendSettings extends BaseModel
     }
 
 
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
+        public function jsonSerialize(): array
     {
         $data = [
             'frequency' => $this->frequency,

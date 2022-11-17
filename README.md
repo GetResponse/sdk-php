@@ -15,7 +15,7 @@ Read more about the API in [GetResponse API Docs](https://apidocs.getresponse.co
 
 ## Requirements
 
-* PHP 5.5+
+* PHP 7.3+
 
 * [cURL](https://secure.php.net/manual/en/book.curl.php)
 
@@ -94,7 +94,7 @@ Example:
 ```php
 <?php
 
-use Getresponse\Sdk\Operation\Campaigns\GetCampaigns\GetCampaigns;
+use Getresponse\Sdk\Operation\Campaigns\GetCampaigns\GetCampaigns; 
 
 $campaignsOperation = new GetCampaigns();
 $response = $client->call($campaignsOperation);

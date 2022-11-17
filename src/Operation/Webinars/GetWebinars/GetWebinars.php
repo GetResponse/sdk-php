@@ -9,7 +9,7 @@ class GetWebinars extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/webinars';
+    public const METHOD_URL = '/v3/webinars';
 
     /** @var GetWebinarsSearchQuery */
     private $query;

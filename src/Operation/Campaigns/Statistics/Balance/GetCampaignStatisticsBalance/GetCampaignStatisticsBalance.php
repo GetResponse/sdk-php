@@ -8,7 +8,7 @@ class GetCampaignStatisticsBalance extends QueryOperation
 {
     use OperationVersionTrait;
 
-    const METHOD_URL = '/v3/campaigns/statistics/balance';
+    public const METHOD_URL = '/v3/campaigns/statistics/balance';
 
     /** @var GetCampaignStatisticsBalanceSearchQuery */
     private $query;
