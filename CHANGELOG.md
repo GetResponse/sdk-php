@@ -1,6 +1,7 @@
-## 3.0.0 - 2022-11-17
 
-* support for 8.0 and 8.1
+## 3.0.0 - 2022-08-21
+
+* support for php >= 8.0 and <= 8.2
 * PHP versions < 7.3 unsupported
 * phpunit version upgrade to 9.5
 
